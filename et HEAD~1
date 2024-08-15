@@ -1,0 +1,497 @@
+[33mcommit b74fe1cb54a159c6b095072c94d774fd35fffca2[m[33m ([m[1;36mHEAD -> [m[1;32mdev[m[33m)[m
+Author: ashensky <251902756@qq.com>
+Date:   Thu Aug 15 21:36:32 2024 +0800
+
+    项目初始
+
+[33mcommit 3368bc3d36ee9d49db2ce50aeaecbf732dad4ba0[m[33m ([m[1;32mlesson-init[m[33m)[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Apr 17 16:31:15 2023 +0800
+
+    方法注释修复
+
+[33mcommit f08a8043cff472a46bb02282941c76cbded9acbe[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Apr 13 14:29:24 2023 +0800
+
+    修复MQ发送的工具类名称拼写错误；埋坑
+
+[33mcommit 79e031e1ffdfa70bea7cb352985f337d3d8335b4[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Apr 13 11:06:18 2023 +0800
+
+    修改swagger文档中的项目说明
+
+[33mcommit d590df173403984e674cdfb6dde589e18302a4bf[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Apr 11 16:09:11 2023 +0800
+
+    修改课程目录查询时缺少练习题数量的BUG
+
+[33mcommit 1209baca2f6c59485dec5eb65b70372fdbb20c93[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Mar 22 10:02:10 2023 +0800
+
+    修改预下单时的返回值，添加课程信息
+
+[33mcommit f58b5fca5dcf1a24646a79bc490b5d430c16d8f1[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Mar 21 23:11:06 2023 +0800
+
+    修改订单业务与优惠券有关的部分字段
+
+[33mcommit 22df9004d77efc7a0f90b6406750feff4a1e4447[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Mar 19 16:36:55 2023 +0800
+
+    解决日期转换异常
+
+[33mcommit 7a6f3cf038973209463431c1da17140de9e6633a[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Mar 18 15:36:16 2023 +0800
+
+    解决MQ通知的消息id问题
+
+[33mcommit 452a851dbf22421b97ab10823d50bede6a2354a1[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Mar 10 21:05:51 2023 +0800
+
+    解决分布式锁相关BUG
+
+[33mcommit cdbb9a52b40e8c52b53708a1933bb91fda7be2af[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Mar 4 09:53:55 2023 +0800
+
+    1.解决枚举校验异常
+
+[33mcommit 411a3f6884b9729bf66fcc4192fcf8f2c977a336[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Mar 3 08:58:13 2023 +0800
+
+    1.修复登录覆盖问题
+
+[33mcommit 97721f82c01ae01352167a967295511780a1734a[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Mar 2 18:44:03 2023 +0800
+
+    1.修复课程分类缓存API
+
+[33mcommit a07a754119c1a4026b5a615923fd114ff266ff88[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Feb 27 11:16:15 2023 +0800
+
+    1.修复网关部分请求路径确实
+
+[33mcommit 7133115d68fa3d9f0c5533a5df3979f4b30a89ba[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Feb 8 09:26:06 2023 +0800
+
+    1.修复课程管理中练习题草稿分数查询问题
+
+[33mcommit b46126987870dcc9364c5ef430dd38dadbde62f8[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Dec 9 11:16:49 2022 +0800
+
+    1.修复登录退出问题
+
+[33mcommit b74ebc84f4a0eba5cb3d57c6de855356c581db5a[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Dec 5 15:00:03 2022 +0800
+
+    1.修复课程微服务目录查询功能
+
+[33mcommit 44d655597cbca47244f302f935316048f458ee50[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Dec 5 14:26:19 2022 +0800
+
+    1.修复学习中心主函数包名
+
+[33mcommit 09b58567e58672c2a528bbd4787adafdabf5573f[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Dec 5 11:47:19 2022 +0800
+
+    1.修复搜索服务部分BUG
+
+[33mcommit c7a1bb1c0975d9a8571c3414cad433d788ae6d0f[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 29 16:30:58 2022 +0800
+
+    1.修复订单删除业务逻辑
+
+[33mcommit 29db39b8be81df44594d14679c24f90bb158a910[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Nov 28 23:33:02 2022 +0800
+
+    订单删除逻辑
+
+[33mcommit 0211553a8db32ef1b9b697ced2f5717f8d5e2c80[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Nov 28 14:44:58 2022 +0800
+
+    添加swagger文档包装
+
+[33mcommit ad5bd38115187d2b78ef45e02de59c398862b1d9[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Nov 23 17:53:49 2022 +0800
+
+    添加网关过滤器，保留Host头
+
+[33mcommit a371bd35f5a941723e85ddf27acb40c2db50289e[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Nov 23 17:16:47 2022 +0800
+
+    实现登录刷新功能
+
+[33mcommit ee3e4e79f55016b018106a648b33213542437905[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Nov 23 16:59:23 2022 +0800
+
+    添加cookie生成的日志信息
+
+[33mcommit 58f674f0edfcb7dafa110d22397dbaf6f38f2894[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:53:35 2022 +0800
+
+    Jwt工具注释
+
+[33mcommit 70c2f55d2457b80537a34587de13f2b498bff41b[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:47:22 2022 +0800
+
+    1.修复试题管理系统部分BUG
+
+[33mcommit 1c2a35c80ac94364c3378c387b15e11cb0ad88ea[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:40:00 2022 +0800
+
+    1.添加cookie解码工具
+
+[33mcommit 53457a51930fcb5923e5dd76338f95939e8df4ea[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:38:00 2022 +0800
+
+    1.移除刷新token接口，留给学生实现
+
+[33mcommit 55c7fa9270971ff2ebc40a0469f2e1ae9e0d7a27[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:26:22 2022 +0800
+
+    Jwt工具注释
+
+[33mcommit 7fc1e281dbb2e3a92b770f67d6d745b14bc7d508[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Nov 22 16:12:56 2022 +0800
+
+    Jwt工具注释
+
+[33mcommit d3b112270f9984b908ddf9772d3976e20011cc99[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Nov 11 17:40:20 2022 +0800
+
+    MQ的自动消息头处理，记录requestId
+
+[33mcommit 85ee51e97e06effcfbc9c103d9358930df4b3acd[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Nov 10 16:31:43 2022 +0800
+
+    完善DTO的Swagger注解
+
+[33mcommit 8b7c0a902ed85baefa7b07205f463347f6737a20[m
+Author: tjxt <tjxt@itcast.cn>
+Date:   Wed Nov 9 15:37:30 2022 +0800
+
+    更新 'startup.sh'
+
+[33mcommit eac562803b8e715bc144a515c4adb41c7be94626[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 19:02:28 2022 +0800
+
+    1.修复课程管理系统部分BUG
+
+[33mcommit 34dcdf0923c3a14519ac11e63f66f4ed24f44bd1[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 18:24:26 2022 +0800
+
+    1.修复课程微服务异常
+
+[33mcommit 5a268b81f9903edbcf3f9075df81fdc7cb77362d[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 18:12:34 2022 +0800
+
+    1.修复试题管理系统部分BUG
+
+[33mcommit 5592f0ed8c1cd8f6be378a685d5e9ee7ae92cec9[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 17:57:29 2022 +0800
+
+    1.修复试题管理系统部分BUG
+
+[33mcommit 45cffdd6c9045f0644d3bf96d8ebaad7454f09eb[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 17:47:40 2022 +0800
+
+    1.修复课程下架逻辑
+
+[33mcommit f7ebedae3caefb150e4eeb724c3e2aae89cb3335[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 16:57:47 2022 +0800
+
+    1.修复数据服务看板查询问题
+
+[33mcommit 5675e8ae345f61a92dd6131d4e6fd025d75def86[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 16:31:47 2022 +0800
+
+    1.错误提交
+
+[33mcommit 937d9fe114fe01dba0ccd868f0b681d4092e1893[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Nov 6 16:22:14 2022 +0800
+
+    1.启动类名错误
+
+[33mcommit a5f79e836961501a15e45e63e2255d18813dbfef[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Nov 5 09:05:40 2022 +0800
+
+    1.回归初始状态
+
+[33mcommit f0a7d0bb41d413ebca57048cfc16046f53fc91a5[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Nov 3 22:26:29 2022 +0800
+
+    启动类名称错误
+
+[33mcommit 67ed41a7533e1b901588dd9e8e321783a7d35989[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Nov 3 22:18:08 2022 +0800
+
+    1.修复试题管理系统部分BUG
+
+[33mcommit 74f4447cba18876e407f1488921344633498a12f[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Nov 3 21:52:58 2022 +0800
+
+    优化课程服务功能
+    解决BUG
+
+[33mcommit 2dfaa958108f80f829b4c009b6fd1053b0bf5c00[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Nov 2 10:24:52 2022 +0800
+
+    数据中心功能
+
+[33mcommit 0e86a28fc3f437506f16d820eea3f51d7417f165[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Oct 31 10:05:37 2022 +0800
+
+    添加一个题目管理接口
+
+[33mcommit 556df12ca50d28a3f4ba38d6f45519c51f38f549[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Oct 28 21:10:38 2022 +0800
+
+    toCommit
+
+[33mcommit 22b6d1cbc080cc5de7eede4180a061f051d9adec[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Oct 28 12:12:28 2022 +0800
+
+    1.修复试题管理系统对JSON格式的支持
+
+[33mcommit dd8a1bb145f650d7c2fbc7affeb431b5eee0bb69[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Oct 28 11:12:12 2022 +0800
+
+    1.修复试题管理系统部分BUG
+
+[33mcommit a5cc5569ae9bb7adc26852a775a39f8635f9afc2[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Oct 25 17:33:09 2022 +0800
+
+    1.修改查询登录用户业务，不再报出401错误
+    2.部分业务添加注释
+    3.添加部分MQ常量
+
+[33mcommit 3f09485495c40a6b7c1f8f58ec957836bcee863e[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Oct 20 08:30:54 2022 +0800
+
+    1.课程服务提供查询学习目录的接口
+    2.媒资服务修改课表检测逻辑
+
+[33mcommit 34354a122dfdd5f4b51adcceb38d00ae7f02c84a[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sun Oct 9 11:40:39 2022 +0800
+
+    设置支付回调为动态加载，避免频繁重启项目
+
+[33mcommit 7dd38020bbda6e738d9d23518d8054f442aca6d4[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Oct 8 21:06:13 2022 +0800
+
+    添加不同环境变量配置
+
+[33mcommit f3222e047069067f0adeb19f899132d3b80e6618[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 30 08:49:00 2022 +0800
+
+    修复课程微服务BUG，分页查询课程时显示的分类信息不正确
+    修复登录时返回的异常信息
+
+[33mcommit 9a516d5d179dd41971fed98e77a78a59a5576f01[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Sep 29 15:38:48 2022 +0800
+
+    修改脚本
+    修改cookie工具，适应新版cookie的domain格式
+
+[33mcommit 0dafb9200d4ca7123e9bbc384bc40c8a27a510b5[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 17:55:50 2022 +0800
+
+    修改脚本工作目录
+
+[33mcommit 9f90fd131e176812fa217c577e9a91537fcf28e7[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 17:49:34 2022 +0800
+
+    测试
+
+[33mcommit ce233de287b9aa768dc6c723567dbcbaebb4b32e[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 17:33:03 2022 +0800
+
+    修改启动脚本
+
+[33mcommit 1c3a211424e60f4b0d24082bb2793c2b23bbed94[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 17:04:20 2022 +0800
+
+    测试网关host头传递问题
+
+[33mcommit a8c3fa8276568ab2bc5f29c72b4622dd23f0788e[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 16:06:46 2022 +0800
+
+    测试网关host头传递问题
+
+[33mcommit b7a35dd3b527a9f712b3f0030fdd1964745b7742[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 14:58:19 2022 +0800
+
+    修改启动脚本，添加远程调试参数
+
+[33mcommit 36c033d476ff1b0bec18ca5660ddada551fc6cd2[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Wed Sep 28 12:02:44 2022 +0800
+
+    Jwt工具修改
+    添加cookie工具
+
+[33mcommit f64c0576254de5acfde5485eaf37b4c81fc51c4a[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Sep 27 21:56:18 2022 +0800
+
+    Jwt工具修改
+    添加cookie工具
+
+[33mcommit 81056b6d6358e2b65f2ef5c4820ffdd9513b2345[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Sep 27 20:53:11 2022 +0800
+
+    Jwt工具修改
+    添加cookie工具
+
+[33mcommit 9aa09b814c035d39979b7e192488719406aab7db[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Sep 26 10:57:08 2022 +0800
+
+    修改属性注入方式
+
+[33mcommit 4c43bedfe5faed82716babf2d147632400aec0e1[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Sep 26 09:05:54 2022 +0800
+
+    给容器添加开机启动配置
+
+[33mcommit a16afbe77a02c0da452c1f60341b76b706198de5[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Sep 24 11:38:44 2022 +0800
+
+    添加阿里云短信发送功能
+    修复MybatisPlus的字段填充功能
+
+[33mcommit 337ee3776811242e23669fc0cbd97129a77de439[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 23 21:47:48 2022 +0800
+
+    修复jwt工具
+
+[33mcommit 0a36a73392c0499211554a2b5028ba6146e6843d[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 23 21:07:55 2022 +0800
+
+    修复jwt工具
+
+[33mcommit 78e2ef1eb41b76adefba563cf3123c44f6af88d5[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 23 20:45:12 2022 +0800
+
+    给订单支付通知添加了延迟消息及重试机制
+    修改dev环境下的IP地址
+
+[33mcommit 9159d180e8f9d8f0b8468e8c6ba11472595b4a77[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Sep 19 20:32:52 2022 +0800
+
+    添加构建脚本和Dockerfile
+
+[33mcommit 14e205eab0924d472548b3030b4057008c815c0f[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Mon Sep 19 17:01:21 2022 +0800
+
+    seata-1.5.0版本存在BUG，升级到1.5.1
+
+[33mcommit 0c8be7fba916566e0408639a856c67c3ac67ce6d[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Sep 17 11:24:07 2022 +0800
+
+    移除promotion服务
+
+[33mcommit 47423a73548b037b6ea0fcaf274363291af36f6b[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Sat Sep 17 09:24:20 2022 +0800
+
+    分页工具BUG处理
+
+[33mcommit 7ca88b1edadbc92253bf9e70c93e35bb57eac909[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 16 09:02:39 2022 +0800
+
+    添加交易服务中课程统计功能
+    添加一些工具
+    修改员工查询接口，添加角色信息
+
+[33mcommit 61857d1fb6707d892a91b53af6d429684e83d232[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Tue Sep 6 21:30:55 2022 +0800
+
+    前端联调并解决BUG
+
+[33mcommit f3ca0f1ea5bb78ea35947d331cbe0ee31c91c9c6[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Fri Sep 2 14:31:49 2022 +0800
+
+    优化代码：
+     - 课程服务API接口优化，精简
+     - 取消学习中心接口，改为从订单服务统计课程报名情况
+
+[33mcommit 565a52b16887febc628a479a7d48408798c394d7[m
+Author: 虎哥 <huyi0612@163.com>
+Date:   Thu Sep 1 19:44:50 2022 +0800
+
+    初始化版本，不包含：
+     - 学习服务
+     - 积分服务
+    项目代码待优化，BUG待修复
