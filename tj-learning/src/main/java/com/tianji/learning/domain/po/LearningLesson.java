@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 
 import com.tianji.learning.enums.LessonStatus;
+import com.tianji.learning.enums.PlanStatus;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -47,7 +48,7 @@ public class LearningLesson implements Serializable {
     private Integer weekFreq;
 
     @ApiModelProperty(value = "学习计划状态，0-没有计划，1-计划进行中")
-    private LessonStatus planStatus;
+    private PlanStatus planStatus;
 
     @ApiModelProperty(value = "已学习小节数量")
     private Integer learnedSections;

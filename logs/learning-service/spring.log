@@ -1,0 +1,623 @@
+00:02:43.538-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:02:43.538-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:02:43.546-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:02:43.546-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:02:43.551-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+00:02:44.237-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+00:02:44.340-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+00:02:44.340-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+00:02:44.368-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:02:44.368-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+00:02:44.369-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+00:02:44.373-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:02:44.373-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+00:02:44.999-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1723824168710,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":49121230391189} from /192.168.150.101
+00:02:45.000-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:02:45.002-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> []
+00:02:47.376-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+00:02:47.376-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+00:02:50.378-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+00:02:53.382-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+00:02:53.383-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+00:02:53.384-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+00:02:53.384-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+00:02:53.384-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+00:02:53.385-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+00:02:53.385-[LAPTOP-L9SH1VHI][sys]-- WARN 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+00:02:53.385-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+00:02:53.385-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+00:02:53.386-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+00:02:53.391-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:02:53.407-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:02:53.409-[LAPTOP-L9SH1VHI][sys]-- INFO 10664 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+00:03:05.670-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+00:03:06.901-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+00:03:06.905-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:03:06.941-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 0 Redis repository interfaces.
+00:03:07.403-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=60626c88-d216-32c6-ae5b-570e8d1508b5
+00:03:08.029-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.032-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.034-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000008015b6758] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.038-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.074-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.078-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:03:08.411-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+00:03:08.426-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:03:08.426-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+00:03:08.606-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:03:08.607-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2916 ms
+00:03:08.976-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:09.261-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:10.457-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+00:03:11.477-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:11.523-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:11.915-[LAPTOP-L9SH1VHI][sys]--DEBUG 31812 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+00:03:12.075-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+00:03:13.242-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [sson-netty-2-13] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+00:03:13.283-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [sson-netty-2-18] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+00:03:13.349-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+00:03:13.350-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+00:03:15.636-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.656-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.682-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.700-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.716-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.738-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+00:03:15.794-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+00:03:15.796-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+00:03:15.958-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+00:03:15.959-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [       Thread-8] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+00:03:15.969-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:03:15.969-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+00:03:15.970-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:03:16.050-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+00:03:16.059-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+00:03:16.060-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+00:03:16.066-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+00:03:16.199-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:03:16.200-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:03:16.202-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+00:03:16.556-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723824200287,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":49152807908141} from /192.168.150.101
+00:03:16.571-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+00:03:16.578-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+00:03:18.219-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+00:03:18.350-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#18356d9e:0/SimpleConnection@119d21ce [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 61842]
+00:03:18.456-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 17.513 seconds (JVM running for 18.723)
+00:03:18.461-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+00:03:18.463-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+00:03:18.464-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+00:03:18.464-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+00:03:18.464-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+00:03:18.464-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+00:03:18.465-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+00:03:18.465-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+00:03:18.465-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+00:03:18.468-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+00:03:37.039-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [nio-8090-exec-2] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7c83dc97
+00:03:37.070-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+00:03:37.482-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+00:03:37.495-[LAPTOP-L9SH1VHI][sys]--DEBUG 31812 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:03:37.535-[LAPTOP-L9SH1VHI][sys]--DEBUG 31812 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:03:37.589-[LAPTOP-L9SH1VHI][sys]--DEBUG 31812 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:11:00.350-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:11:00.351-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:11:00.351-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:11:00.352-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:11:00.364-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+00:11:00.760-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+00:11:00.846-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+00:11:00.846-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+00:11:00.868-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:11:00.869-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+00:11:00.869-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+00:11:00.871-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:11:00.871-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+00:11:01.389-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+00:11:01.389-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+00:11:01.396-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1723824665142,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":49617662199482} from /192.168.150.101
+00:11:01.397-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+00:11:01.399-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> []
+00:11:04.391-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- WARN 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+00:11:07.393-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+00:11:07.394-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+00:11:07.394-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+00:11:07.398-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:11:07.412-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:11:07.414-[LAPTOP-L9SH1VHI][sys]-- INFO 31812 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+00:11:21.062-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+00:11:22.091-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+00:11:22.094-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:11:22.118-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+00:11:22.522-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=60626c88-d216-32c6-ae5b-570e8d1508b5
+00:11:23.109-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.112-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.114-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000008015b6758] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.118-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.157-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.161-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:11:23.494-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+00:11:23.508-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:11:23.509-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+00:11:23.681-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:11:23.681-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2599 ms
+00:11:24.035-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:24.346-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:25.353-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+00:11:26.052-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:26.082-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:26.384-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+00:11:26.499-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+00:11:27.308-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [sson-netty-2-15] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+00:11:27.343-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [sson-netty-2-18] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+00:11:27.395-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+00:11:27.397-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+00:11:29.472-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.490-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.512-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.530-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.545-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.562-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+00:11:29.619-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+00:11:29.621-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+00:11:29.770-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+00:11:29.771-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [       Thread-8] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+00:11:29.784-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:11:29.785-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+00:11:29.786-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:11:29.843-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+00:11:29.850-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+00:11:29.851-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+00:11:29.855-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+00:11:30.348-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723824694094,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":49646614504159} from /192.168.150.101
+00:11:30.354-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:11:30.360-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:11:31.469-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+00:11:31.537-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#6e8f3b76:0/SimpleConnection@469caf69 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 61119]
+00:11:31.609-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 15.006 seconds (JVM running for 16.139)
+00:11:31.613-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+00:11:31.615-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+00:11:31.616-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+00:11:43.378-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:11:43.378-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:11:43.380-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+00:11:48.231-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [nio-8090-exec-5] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7c83dc97
+00:11:48.254-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [nio-8090-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+00:11:48.545-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [nio-8090-exec-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+00:11:48.555-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:11:48.581-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:11:48.616-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:11:52.853-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:11:52.854-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:11:52.857-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:11:55.689-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:11:55.690-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:11:55.691-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:12:05.287-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:12:05.289-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:12:05.292-[LAPTOP-L9SH1VHI][sys]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:12:41.394-[LAPTOP-L9SH1VHI][14c3a6297b58417e8ea644362185ceaa]--DEBUG 31840 --- [io-8090-exec-10] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:12:41.394-[LAPTOP-L9SH1VHI][14c3a6297b58417e8ea644362185ceaa]--DEBUG 31840 --- [io-8090-exec-10] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:12:41.398-[LAPTOP-L9SH1VHI][14c3a6297b58417e8ea644362185ceaa]--DEBUG 31840 --- [io-8090-exec-10] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:12:47.500-[LAPTOP-L9SH1VHI][4f0ab4bbf47943679d4bdab6face84bd]--DEBUG 31840 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:12:47.501-[LAPTOP-L9SH1VHI][4f0ab4bbf47943679d4bdab6face84bd]--DEBUG 31840 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:12:47.501-[LAPTOP-L9SH1VHI][73cac947d4104be89226be844dfdb4c9]--ERROR 31840 --- [nio-8090-exec-8] c.t.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /lessons/plans -> 
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "plans"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.tianji.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:26) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "plans"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:708) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1156) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.22.jar:5.3.22]
+	... 50 common frames omitted
+00:12:47.504-[LAPTOP-L9SH1VHI][4f0ab4bbf47943679d4bdab6face84bd]--DEBUG 31840 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:12:47.555-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.L.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM learning_lesson WHERE (user_id = ?)
+00:12:47.556-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.L.selectPage_mpCount             : ==> Parameters: 2(Long)
+00:12:47.557-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.L.selectPage_mpCount             : <==      Total: 1
+00:12:47.564-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectPage  : ==>  Preparing: SELECT id, user_id, course_id, status, week_freq, plan_status, learned_sections, latest_section_id, latest_learn_time, create_time, expire_time, update_time FROM learning_lesson WHERE (user_id = ?) ORDER BY latest_learn_time DESC LIMIT ?
+00:12:47.565-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectPage  : ==> Parameters: 2(Long), 20(Long)
+00:12:47.567-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectPage  : <==      Total: 2
+00:12:47.573-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+00:12:47.668-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]-- INFO 31840 --- [nio-8090-exec-9] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:12:47.670-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]-- INFO 31840 --- [nio-8090-exec-9] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:12:48.041-[LAPTOP-L9SH1VHI][11308a48c1cf464096219618bd0b52ca]--DEBUG 31840 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (468ms)
+00:12:48.256-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@course-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service\",\"ip\":\"192.168.150.101\",\"port\":8086,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@course-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723824772003,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":49724524300551} from /192.168.150.101
+00:12:54.470-[LAPTOP-L9SH1VHI][8e8ed5e59dd04aaf8260dd756bcf1de1]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:12:54.471-[LAPTOP-L9SH1VHI][8e8ed5e59dd04aaf8260dd756bcf1de1]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:12:54.477-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.L.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM learning_lesson WHERE (user_id = ?)
+00:12:54.478-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.L.selectPage_mpCount             : ==> Parameters: 2(Long)
+00:12:54.478-[LAPTOP-L9SH1VHI][8e8ed5e59dd04aaf8260dd756bcf1de1]--DEBUG 31840 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:12:54.479-[LAPTOP-L9SH1VHI][aaf2b1765d684b2db5cc37690f035469]--ERROR 31840 --- [nio-8090-exec-6] c.t.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /lessons/plans -> 
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "plans"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.tianji.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:26) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "plans"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:708) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1156) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.22.jar:5.3.22]
+	... 50 common frames omitted
+00:12:54.484-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.L.selectPage_mpCount             : <==      Total: 1
+00:12:54.487-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectPage  : ==>  Preparing: SELECT id, user_id, course_id, status, week_freq, plan_status, learned_sections, latest_section_id, latest_learn_time, create_time, expire_time, update_time FROM learning_lesson WHERE (user_id = ?) ORDER BY latest_learn_time DESC LIMIT ?
+00:12:54.487-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectPage  : ==> Parameters: 2(Long), 20(Long)
+00:12:54.492-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectPage  : <==      Total: 2
+00:12:54.493-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+00:12:54.511-[LAPTOP-L9SH1VHI][3d12ca598e71404696acc4d16c11c836]--DEBUG 31840 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (18ms)
+00:13:27.512-[LAPTOP-L9SH1VHI][420dfa7952b045cb95e283f4fbc975fd]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:13:27.512-[LAPTOP-L9SH1VHI][420dfa7952b045cb95e283f4fbc975fd]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:13:27.517-[LAPTOP-L9SH1VHI][420dfa7952b045cb95e283f4fbc975fd]--DEBUG 31840 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:13:45.566-[LAPTOP-L9SH1VHI][5eb81da6dd394f459ca345ce5ad4e796]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:13:45.568-[LAPTOP-L9SH1VHI][5eb81da6dd394f459ca345ce5ad4e796]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:13:45.571-[LAPTOP-L9SH1VHI][5eb81da6dd394f459ca345ce5ad4e796]--DEBUG 31840 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:13:46.004-[LAPTOP-L9SH1VHI][88817ac4c2cc4bd0beaf50bc2ea9396b]--DEBUG 31840 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:13:46.005-[LAPTOP-L9SH1VHI][88817ac4c2cc4bd0beaf50bc2ea9396b]--DEBUG 31840 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:13:46.007-[LAPTOP-L9SH1VHI][88817ac4c2cc4bd0beaf50bc2ea9396b]--DEBUG 31840 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:19:09.369-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:19:09.369-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:19:09.369-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:19:09.370-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:19:09.380-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+00:19:09.974-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+00:19:10.058-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+00:19:10.058-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+00:19:10.080-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:19:10.080-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+00:19:10.080-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+00:19:10.083-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:19:10.083-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+00:19:10.295-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+00:19:10.295-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+00:19:10.624-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1723825154378,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":50106899030099} from /192.168.150.101
+00:19:10.624-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:19:10.627-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> []
+00:19:13.299-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+00:19:16.302-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+00:19:16.302-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- WARN 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+00:19:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+00:19:16.307-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:19:16.321-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:19:16.323-[LAPTOP-L9SH1VHI][sys]-- INFO 31840 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+00:19:29.548-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+00:19:30.568-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+00:19:30.571-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+00:19:30.597-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+00:19:30.982-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=60626c88-d216-32c6-ae5b-570e8d1508b5
+00:19:31.548-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.552-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.553-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000008015b6758] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.557-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.598-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.602-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+00:19:31.925-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+00:19:31.938-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+00:19:31.938-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+00:19:32.107-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+00:19:32.107-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2540 ms
+00:19:32.429-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:32.685-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:33.509-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+00:19:34.064-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:34.087-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:34.333-[LAPTOP-L9SH1VHI][sys]--DEBUG 26440 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+00:19:34.443-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+00:19:35.216-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [sson-netty-2-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+00:19:35.243-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [sson-netty-2-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+00:19:35.290-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+00:19:35.291-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+00:19:37.572-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.599-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.631-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.654-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.680-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.702-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+00:19:37.762-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+00:19:37.765-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+00:19:37.948-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+00:19:37.949-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [       Thread-8] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+00:19:37.962-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:19:37.962-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+00:19:37.963-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+00:19:38.041-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+00:19:38.047-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+00:19:38.048-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+00:19:38.053-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+00:19:38.536-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723825182292,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":50134812246350} from /192.168.150.101
+00:19:38.542-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+00:19:38.548-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+00:19:39.678-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+00:19:39.741-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#52f71d2:0/SimpleConnection@5bcda4a6 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 59319]
+00:19:39.815-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 14.686 seconds (JVM running for 16.073)
+00:19:39.819-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+00:19:39.820-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+00:19:39.820-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+00:19:39.820-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+00:19:39.820-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+00:19:39.820-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+00:19:39.821-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+00:19:39.821-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+00:19:39.821-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+00:19:39.823-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+00:19:44.522-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+00:19:44.522-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+00:19:44.524-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+00:19:50.419-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [nio-8090-exec-6] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @7c83dc97
+00:19:50.449-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [nio-8090-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+00:19:50.793-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [nio-8090-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+00:19:50.806-[LAPTOP-L9SH1VHI][sys]--DEBUG 26440 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (course_id = ? AND status IN (?,?,?))
+00:19:50.847-[LAPTOP-L9SH1VHI][sys]--DEBUG 26440 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long), 0(Integer), 1(Integer), 2(Integer)
+00:19:50.882-[LAPTOP-L9SH1VHI][sys]--DEBUG 26440 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : <==      Total: 1
+00:20:02.321-[LAPTOP-L9SH1VHI][6bdf04b25f1c4adbb31e6ad9fdbcd89b]--DEBUG 26440 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:20:02.323-[LAPTOP-L9SH1VHI][6bdf04b25f1c4adbb31e6ad9fdbcd89b]--DEBUG 26440 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:20:02.326-[LAPTOP-L9SH1VHI][6bdf04b25f1c4adbb31e6ad9fdbcd89b]--DEBUG 26440 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:20:04.988-[LAPTOP-L9SH1VHI][1f73cddcedcc43d8838ebe1aa008a499]--DEBUG 26440 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:20:04.989-[LAPTOP-L9SH1VHI][1f73cddcedcc43d8838ebe1aa008a499]--DEBUG 26440 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1549025085494521857(Long)
+00:20:04.996-[LAPTOP-L9SH1VHI][1f73cddcedcc43d8838ebe1aa008a499]--DEBUG 26440 --- [nio-8090-exec-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:20:10.993-[LAPTOP-L9SH1VHI][a2ebc5f255d24ad2b2fe059457acb5d2]--DEBUG 26440 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+00:20:10.994-[LAPTOP-L9SH1VHI][a2ebc5f255d24ad2b2fe059457acb5d2]--DEBUG 26440 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+00:20:10.996-[LAPTOP-L9SH1VHI][a2ebc5f255d24ad2b2fe059457acb5d2]--DEBUG 26440 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+00:20:11.003-[LAPTOP-L9SH1VHI][883ac1a7a5c147b895701ff9357cfa22]--ERROR 26440 --- [nio-8090-exec-6] c.t.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /lessons/plans -> 
+org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "plans"
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:133) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.tianji.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:26) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.lang.NumberFormatException: For input string: "plans"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:67) ~[na:na]
+	at java.base/java.lang.Long.parseLong(Long.java:708) ~[na:na]
+	at java.base/java.lang.Long.valueOf(Long.java:1156) ~[na:na]
+	at org.springframework.util.NumberUtils.parseNumber(NumberUtils.java:214) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.beans.propertyeditors.CustomNumberEditor.setAsText(CustomNumberEditor.java:115) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertTextValue(TypeConverterDelegate.java:429) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.doConvertValue(TypeConverterDelegate.java:402) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:155) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:73) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.TypeConverterSupport.convertIfNecessary(TypeConverterSupport.java:53) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.validation.DataBinder.convertIfNecessary(DataBinder.java:729) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:125) ~[spring-web-5.3.22.jar:5.3.22]
+	... 50 common frames omitted
+00:20:11.058-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.L.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM learning_lesson WHERE (user_id = ?)
+00:20:11.059-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.L.selectPage_mpCount             : ==> Parameters: 2(Long)
+00:20:11.060-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.L.selectPage_mpCount             : <==      Total: 1
+00:20:11.067-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectPage  : ==>  Preparing: SELECT id, user_id, course_id, status, week_freq, plan_status, learned_sections, latest_section_id, latest_learn_time, create_time, expire_time, update_time FROM learning_lesson WHERE (user_id = ?) ORDER BY latest_learn_time DESC LIMIT ?
+00:20:11.067-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectPage  : ==> Parameters: 2(Long), 20(Long)
+00:20:11.069-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.t.l.m.LearningLessonMapper.selectPage  : <==      Total: 2
+00:20:11.076-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+00:20:11.171-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]-- INFO 26440 --- [nio-8090-exec-5] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+00:20:11.173-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]-- INFO 26440 --- [nio-8090-exec-5] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+00:20:11.278-[LAPTOP-L9SH1VHI][56275bbd04fa433b9267f4f4c8c529c7]--DEBUG 26440 --- [nio-8090-exec-5] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (200ms)
+00:20:11.722-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@course-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service\",\"ip\":\"192.168.150.101\",\"port\":8086,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@course-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723825215482,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":50168002557737} from /192.168.150.101
+00:20:13.957-[LAPTOP-L9SH1VHI][a65dab9277a34dc79d445806f08f238f]--DEBUG 26440 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+00:20:13.957-[LAPTOP-L9SH1VHI][a65dab9277a34dc79d445806f08f238f]--DEBUG 26440 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 2(Long)
+00:20:13.959-[LAPTOP-L9SH1VHI][a65dab9277a34dc79d445806f08f238f]--DEBUG 26440 --- [nio-8090-exec-8] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+00:22:03.717-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:22:03.717-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:22:03.717-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:22:03.718-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:22:03.725-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+00:22:03.906-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+00:22:03.992-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+00:22:03.992-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+00:22:04.014-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:22:04.014-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+00:22:04.014-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+00:22:04.018-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:22:04.018-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+00:22:04.607-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1723825328369,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":50280889686478} from /192.168.150.101
+00:22:04.608-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+00:22:04.611-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> []
+00:22:07.020-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+00:22:07.020-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+00:22:10.022-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+00:22:13.024-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+00:22:13.024-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+00:22:13.024-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- WARN 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+00:22:13.025-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+00:22:13.026-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+00:22:13.030-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:22:13.044-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+00:22:13.046-[LAPTOP-L9SH1VHI][sys]-- INFO 26440 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
