@@ -1,5 +1,7 @@
 
 
+
+
 ## 登录相关：
 
 该项目通过jwt进行登录校验，所以token的解析的行为放到了网关中，由网关把用户信息放入请求头，传递给下游微服务。
@@ -80,3 +82,12 @@ public class UserInfoInterceptor implements HandlerInterceptor {
 
 至此，用户的信息存入请求头的即使如此，可直接调用UserContext.getId，同时这是基于ThreadLocal，所以可以避开不同请求，避免线程安全问题
 
+
+
+## 细节：
+
+spring @validated （参数是如何检验的，可以减少if分支的部分）
+
+@NotNULL 检验非空
+
+@Max 检验数据是否在最大范围之内
