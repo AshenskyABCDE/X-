@@ -8330,3 +8330,240 @@ java.net.SocketTimeoutException: Connect timed out
 22:30:13.233-[LAPTOP-L9SH1VHI][sys]-- INFO 33620 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 22:30:13.261-[LAPTOP-L9SH1VHI][sys]-- INFO 33620 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
 22:30:13.270-[LAPTOP-L9SH1VHI][sys]-- INFO 33620 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+22:30:24.486-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+22:30:26.184-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+22:30:26.191-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+22:30:26.238-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+22:30:26.827-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=fd02098d-ce18-3257-80b5-15e200defb9c
+22:30:27.530-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.533-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.535-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000008015b6570] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.539-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.579-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.583-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+22:30:27.970-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+22:30:27.986-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+22:30:27.986-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+22:30:28.173-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+22:30:28.173-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3657 ms
+22:30:28.535-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:28.835-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:29.835-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+22:30:30.507-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:30.532-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:30.807-[LAPTOP-L9SH1VHI][sys]--DEBUG 23364 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+22:30:30.928-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+22:30:31.702-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [sson-netty-2-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+22:30:31.733-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [sson-netty-2-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+22:30:31.785-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+22:30:31.787-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+22:30:33.744-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.766-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.793-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.815-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.832-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.852-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+22:30:33.912-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+22:30:33.915-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+22:30:34.134-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+22:30:34.135-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [       Thread-8] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+22:30:34.155-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:30:34.157-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+22:30:34.157-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+22:30:34.224-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+22:30:34.233-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+22:30:34.234-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+22:30:34.239-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+22:30:34.766-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1723905038623,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":43445146638015} from /192.168.150.101
+22:30:34.773-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:30:34.778-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+22:30:35.683-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+22:30:35.760-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#63e4bbf9:0/SimpleConnection@233d40da [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 58532]
+22:30:35.848-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 16.121 seconds (JVM running for 17.585)
+22:30:35.852-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+22:30:35.853-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+22:30:35.853-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+22:30:35.854-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+22:30:35.855-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+22:30:35.855-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+22:30:35.855-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+22:30:35.855-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+22:30:35.855-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+22:30:35.858-[LAPTOP-L9SH1VHI][sys]-- INFO 23364 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+22:33:08.293-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:10.785-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+22:33:10.785-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+22:33:10.786-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+22:33:10.786-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+22:33:11.295-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:14.297-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:14.297-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : request: /nacos/v1/ns/instance/list failed, servers: [192.168.150.101:8848], code: 500, msg: Connect timed out
+22:33:14.298-[LAPTOP-L9SH1VHI][sys]-- WARN 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to update serviceName: DEFAULT_GROUP@@learning-service
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance/list after all servers([192.168.150.101:8848]) tried: java.net.SocketTimeoutException: Connect timed out
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:19.084-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [68.150.101_8848] c.a.n.c.config.http.ServerHttpAgent      : [NACOS SocketTimeoutException httpPost] currentServerAddr: http://192.168.150.101:8848， err : Read timed out
+22:33:19.084-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [68.150.101_8848] c.a.n.c.config.http.ServerHttpAgent      : no available server, currentServerAddr : http://192.168.150.101:8848
+22:33:19.084-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [68.150.101_8848] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://192.168.150.101:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:19.085-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [68.150.101_8848] c.a.n.client.config.impl.ClientWorker    : longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://192.168.150.101:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+22:33:19.301-[LAPTOP-L9SH1VHI][sys]--ERROR 23364 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
