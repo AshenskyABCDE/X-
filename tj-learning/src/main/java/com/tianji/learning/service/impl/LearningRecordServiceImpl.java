@@ -18,6 +18,7 @@ import com.tianji.learning.mapper.LearningRecordMapper;
 import com.tianji.learning.service.ILearningLessonService;
 import com.tianji.learning.service.ILearningRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tianji.learning.utils.LearningRecordDelayTaskHandler;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -41,6 +42,7 @@ public class LearningRecordServiceImpl extends ServiceImpl<LearningRecordMapper,
     private final ILearningLessonService iLearningLessonService;
 
     private final CourseClient courseClient;
+    private final LearningRecordDelayTaskHandler taskHandler;
     @Override
     public LearningLessonDTO queryLearningRecordByCourse(Long courseId) {
         // 先获取课程Id
@@ -127,9 +129,22 @@ public class LearningRecordServiceImpl extends ServiceImpl<LearningRecordMapper,
             }
             return false;
         }
+        taskHandler.writeRecordCache(record);
         boolean f = true;
         if(record.getFinished() || formDTO.getMoment() * 2 <= formDTO.getDuration()) {
             f = false;
+        }
+        if(!f) {
+            LearningRecord record1 = new LearningRecord();
+            record1.setLessonId(formDTO.getLessonId());
+            LearningRecord record2 = new LearningRecord();
+            record.setLessonId(formDTO.getLessonId());
+            record.setSectionId(formDTO.getSectionId());
+            record.setMoment(formDTO.getMoment());
+            record.setId(record.getId());
+            record.setFinished(record.getFinished());
+            taskHandler.addLearningRecordTask(record2);
+            return false;
         }
         boolean update = lambdaUpdate()
                 .set(LearningRecord::getMoment, formDTO.getMoment())
@@ -140,6 +155,7 @@ public class LearningRecordServiceImpl extends ServiceImpl<LearningRecordMapper,
         if(!update) {
             throw new DbException("更新记录失败");
         }
+        taskHandler.cleanRecordCache(formDTO.getLessonId(),formDTO.getSectionId());
         return f;
     }
 }
