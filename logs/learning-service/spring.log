@@ -1968,3 +1968,329 @@ java.net.SocketTimeoutException: Connect timed out
 21:19:57.096-[LAPTOP-L9SH1VHI][sys]-- INFO 25228 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
 21:19:57.102-[LAPTOP-L9SH1VHI][sys]-- INFO 25228 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 21:19:57.119-[LAPTOP-L9SH1VHI][sys]-- INFO 25228 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+21:20:10.075-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+21:20:11.406-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+21:20:11.410-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+21:20:11.442-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 Redis repository interfaces.
+21:20:11.892-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=47322d9e-98f3-3afc-a251-1b71fd41f6ec
+21:20:12.520-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.523-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.524-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$683/0x00000008015b7bd0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.528-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.570-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.573-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+21:20:12.964-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+21:20:12.979-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:20:12.980-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+21:20:13.161-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:20:13.161-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3058 ms
+21:20:14.150-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:14.439-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:14.460-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:14.489-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:14.546-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:15.567-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+21:20:16.174-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:16.420-[LAPTOP-L9SH1VHI][sys]--DEBUG 28272 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+21:20:16.513-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+21:20:16.976-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [sson-netty-4-23] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+21:20:17.014-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [sson-netty-4-19] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+21:20:17.069-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+21:20:17.071-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+21:20:18.635-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:18.654-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:18.680-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:18.700-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+21:20:18.759-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [           main] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback config fail, adminAddresses is null.
+21:20:18.761-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job accessToken is empty. To ensure system security, please set the accessToken.
+21:20:18.934-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+21:20:18.935-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [       Thread-8] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry config fail, appname is null.
+21:20:18.947-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:20:18.948-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+21:20:18.948-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+21:20:19.009-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+21:20:19.018-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+21:20:19.020-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+21:20:19.024-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+21:20:19.587-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1724332823354,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":33568975683811} from /192.168.150.101
+21:20:19.595-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:20:19.602-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:20:20.655-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+21:20:20.752-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#cbd9494:0/SimpleConnection@7bfc7533 [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 52490]
+21:20:20.844-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 15.792 seconds (JVM running for 17.297)
+21:20:20.850-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+21:20:20.851-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+21:20:20.852-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+21:20:20.853-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+21:20:20.856-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+21:20:41.274-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:20:41.274-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+21:20:41.276-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+21:21:00.677-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+21:21:01.132-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+21:21:01.150-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM interaction_question
+21:21:01.199-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage_mpCount             : ==> Parameters: 
+21:21:01.270-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage_mpCount             : <==      Total: 1
+21:21:01.290-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage                     : ==>  Preparing: SELECT id, title, description, course_id, chapter_id, section_id, user_id, latest_answer_id, answer_times, anonymity, hidden, status, create_time, update_time FROM interaction_question ORDER BY create_time DESC LIMIT ?
+21:21:01.293-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage                     : ==> Parameters: 10(Long)
+21:21:01.312-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.selectPage                     : <==      Total: 5
+21:21:01.322-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2&ids=5 HTTP/1.1
+21:21:01.502-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.101","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:21:01.506-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.101","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:21:01.687-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (363ms)
+21:21:01.719-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+21:21:01.769-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:21:01.773-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]-- INFO 28272 --- [nio-8090-exec-2] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:21:01.993-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (273ms)
+21:21:02.009-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=16&ids=1550383240983875586&ids=17&ids=1550383240983875585&ids=1550383240983875589&ids=1550383240983875588&ids=15 HTTP/1.1
+21:21:02.053-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (43ms)
+21:21:02.074-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@user-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service\",\"ip\":\"192.168.150.101\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@user-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1724332865847,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":33611468744779} from /192.168.150.101
+21:21:02.090-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.api.client.course.CategoryClient     : [CategoryClient#getAllOfOneLevel] ---> GET http://course-service/categorys/getAllOfOneLevel HTTP/1.1
+21:21:02.186-[LAPTOP-L9SH1VHI][6ede249a9895465eb2d83806b0bcd168]--DEBUG 28272 --- [nio-8090-exec-2] c.t.api.client.course.CategoryClient     : [CategoryClient#getAllOfOneLevel] <--- HTTP/1.1 200  (95ms)
+21:21:02.277-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@course-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service\",\"ip\":\"192.168.150.101\",\"port\":8086,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@course-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1724332866051,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":33611672329034} from /192.168.150.101
+21:21:05.181-[LAPTOP-L9SH1VHI][a6a19d5b78804fb29e5a489afacdc1b8]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.update                         : ==>  Preparing: UPDATE interaction_question SET hidden=? WHERE (id = ?)
+21:21:05.182-[LAPTOP-L9SH1VHI][a6a19d5b78804fb29e5a489afacdc1b8]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.update                         : ==> Parameters: true(Boolean), 1826257474496249858(Long)
+21:21:05.187-[LAPTOP-L9SH1VHI][a6a19d5b78804fb29e5a489afacdc1b8]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.update                         : <==    Updates: 1
+21:21:05.222-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM interaction_question
+21:21:05.222-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage_mpCount             : ==> Parameters: 
+21:21:05.228-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage_mpCount             : <==      Total: 1
+21:21:05.233-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage                     : ==>  Preparing: SELECT id, title, description, course_id, chapter_id, section_id, user_id, latest_answer_id, answer_times, anonymity, hidden, status, create_time, update_time FROM interaction_question ORDER BY create_time DESC LIMIT ?
+21:21:05.233-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage                     : ==> Parameters: 10(Long)
+21:21:05.239-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.I.selectPage                     : <==      Total: 5
+21:21:05.240-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2&ids=5 HTTP/1.1
+21:21:05.276-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (35ms)
+21:21:05.278-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+21:21:05.292-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (14ms)
+21:21:05.295-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=16&ids=1550383240983875586&ids=17&ids=1550383240983875585&ids=1550383240983875589&ids=1550383240983875588&ids=15 HTTP/1.1
+21:21:05.310-[LAPTOP-L9SH1VHI][ace0efc2402b4a19839cf87b262efd80]--DEBUG 28272 --- [nio-8090-exec-4] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (14ms)
+21:21:17.264-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]-- WARN 28272 --- [nio-8090-exec-7] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @2b4bac49
+21:21:17.275-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+21:21:17.276-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+21:21:17.293-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+21:21:17.298-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+21:21:17.340-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (41ms)
+21:21:17.352-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+21:21:17.352-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+21:21:17.358-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : <==      Total: 1
+21:21:17.358-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+21:21:17.408-[LAPTOP-L9SH1VHI][18bffa547a5d4469ae3dd74ef3bfd1f7]--DEBUG 28272 --- [nio-8090-exec-7] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (49ms)
+21:21:19.651-[LAPTOP-L9SH1VHI][310da0e0c7d140479f70e48bf033bfa8]--DEBUG 28272 --- [nio-8090-exec-8] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (course_id = ? AND status IN (?,?,?))
+21:21:19.654-[LAPTOP-L9SH1VHI][310da0e0c7d140479f70e48bf033bfa8]--DEBUG 28272 --- [nio-8090-exec-8] c.t.l.m.L.selectCount                    : ==> Parameters: 1549025085494521857(Long), 0(Integer), 1(Integer), 2(Integer)
+21:21:19.655-[LAPTOP-L9SH1VHI][310da0e0c7d140479f70e48bf033bfa8]--DEBUG 28272 --- [nio-8090-exec-8] c.t.l.m.L.selectCount                    : <==      Total: 1
+21:21:19.933-[LAPTOP-L9SH1VHI][06f104f143ab44658f31318de5d1b997]--DEBUG 28272 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+21:21:19.934-[LAPTOP-L9SH1VHI][06f104f143ab44658f31318de5d1b997]--DEBUG 28272 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1549025085494521857(Long)
+21:21:19.936-[LAPTOP-L9SH1VHI][06f104f143ab44658f31318de5d1b997]--DEBUG 28272 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+21:21:19.987-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM interaction_question WHERE (course_id = ? AND hidden = ?)
+21:21:19.987-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage_mpCount             : ==> Parameters: 1549025085494521857(Long), false(Boolean)
+21:21:19.997-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage_mpCount             : <==      Total: 1
+21:21:20.000-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage                     : ==>  Preparing: SELECT id, title, course_id, chapter_id, section_id, user_id, latest_answer_id, answer_times, anonymity, hidden, status, create_time, update_time FROM interaction_question WHERE (course_id = ? AND hidden = ?) ORDER BY create_time DESC LIMIT ?
+21:21:20.000-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage                     : ==> Parameters: 1549025085494521857(Long), false(Boolean), 10(Long)
+21:21:20.004-[LAPTOP-L9SH1VHI][fe3a0228f84b4a07b7247ab62b40baa9]--DEBUG 28272 --- [io-8090-exec-10] c.t.l.m.I.selectPage                     : <==      Total: 1
+21:21:23.500-[LAPTOP-L9SH1VHI][5133494138144f16bf5b6427cc518a5d]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.update                         : ==>  Preparing: UPDATE interaction_question SET hidden=? WHERE (id = ?)
+21:21:23.501-[LAPTOP-L9SH1VHI][5133494138144f16bf5b6427cc518a5d]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.update                         : ==> Parameters: false(Boolean), 1826257474496249858(Long)
+21:21:23.513-[LAPTOP-L9SH1VHI][5133494138144f16bf5b6427cc518a5d]--DEBUG 28272 --- [nio-8090-exec-2] c.t.l.m.I.update                         : <==    Updates: 1
+21:21:23.546-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM interaction_question
+21:21:23.547-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage_mpCount             : ==> Parameters: 
+21:21:23.550-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage_mpCount             : <==      Total: 1
+21:21:23.552-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage                     : ==>  Preparing: SELECT id, title, description, course_id, chapter_id, section_id, user_id, latest_answer_id, answer_times, anonymity, hidden, status, create_time, update_time FROM interaction_question ORDER BY create_time DESC LIMIT ?
+21:21:23.553-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage                     : ==> Parameters: 10(Long)
+21:21:23.555-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.l.m.I.selectPage                     : <==      Total: 5
+21:21:23.556-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2&ids=5 HTTP/1.1
+21:21:23.574-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (17ms)
+21:21:23.575-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] ---> GET http://course-service/courses/simpleInfo/list?ids=2&ids=1549025085494521857 HTTP/1.1
+21:21:23.591-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.tianji.api.client.course.CourseClient  : [CourseClient#getSimpleInfoList] <--- HTTP/1.1 200  (16ms)
+21:21:23.594-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=16&ids=1550383240983875586&ids=17&ids=1550383240983875585&ids=1550383240983875589&ids=1550383240983875588&ids=15 HTTP/1.1
+21:21:23.607-[LAPTOP-L9SH1VHI][157a4b0b313747f68f014dc7b33e79e6]--DEBUG 28272 --- [nio-8090-exec-3] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (12ms)
+21:21:26.034-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+21:21:26.034-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+21:21:26.039-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+21:21:26.041-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+21:21:26.094-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (51ms)
+21:21:26.097-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+21:21:26.097-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+21:21:26.100-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.l.m.L.selectCount                    : <==      Total: 1
+21:21:26.101-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+21:21:26.114-[LAPTOP-L9SH1VHI][53f43383de894a4cbddcbca6d13d8fbe]--DEBUG 28272 --- [nio-8090-exec-4] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (12ms)
+21:21:26.224-[LAPTOP-L9SH1VHI][965088f8a5984f33a95d7ed4709bcd63]--DEBUG 28272 --- [nio-8090-exec-5] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (course_id = ? AND status IN (?,?,?))
+21:21:26.224-[LAPTOP-L9SH1VHI][965088f8a5984f33a95d7ed4709bcd63]--DEBUG 28272 --- [nio-8090-exec-5] c.t.l.m.L.selectCount                    : ==> Parameters: 1549025085494521857(Long), 0(Integer), 1(Integer), 2(Integer)
+21:21:26.227-[LAPTOP-L9SH1VHI][965088f8a5984f33a95d7ed4709bcd63]--DEBUG 28272 --- [nio-8090-exec-5] c.t.l.m.L.selectCount                    : <==      Total: 1
+21:21:26.669-[LAPTOP-L9SH1VHI][729cd1a4a7164b41999e9d0816b0a284]--DEBUG 28272 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND course_id = ?)
+21:21:26.669-[LAPTOP-L9SH1VHI][729cd1a4a7164b41999e9d0816b0a284]--DEBUG 28272 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1549025085494521857(Long)
+21:21:26.671-[LAPTOP-L9SH1VHI][729cd1a4a7164b41999e9d0816b0a284]--DEBUG 28272 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+21:21:26.715-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM interaction_question WHERE (course_id = ? AND hidden = ?)
+21:21:26.715-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage_mpCount             : ==> Parameters: 1549025085494521857(Long), false(Boolean)
+21:21:26.720-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage_mpCount             : <==      Total: 1
+21:21:26.722-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage                     : ==>  Preparing: SELECT id, title, course_id, chapter_id, section_id, user_id, latest_answer_id, answer_times, anonymity, hidden, status, create_time, update_time FROM interaction_question WHERE (course_id = ? AND hidden = ?) ORDER BY create_time DESC LIMIT ?
+21:21:26.722-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage                     : ==> Parameters: 1549025085494521857(Long), false(Boolean), 10(Long)
+21:21:26.727-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] c.t.l.m.I.selectPage                     : <==      Total: 2
+21:21:26.729-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+21:21:26.758-[LAPTOP-L9SH1VHI][b5d1402ddb1c48009043c1d803b1a3d4]--DEBUG 28272 --- [nio-8090-exec-7] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (29ms)
+21:21:45.808-[LAPTOP-L9SH1VHI][sys]--ERROR 28272 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+21:21:47.198-[LAPTOP-L9SH1VHI][sys]--ERROR 28272 --- [ing.beat.sender] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.sendBeat(NamingProxy.java:433) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:167) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+21:21:48.810-[LAPTOP-L9SH1VHI][sys]--ERROR 28272 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+21:22:43.064-[LAPTOP-L9SH1VHI][sys]--ERROR 28272 --- [.naming.updater] com.alibaba.nacos.client.naming          : [NA] failed to request
+java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:539) ~[na:na]
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:585) ~[na:na]
+	at java.base/java.net.Socket.connect(Socket.java:666) ~[na:na]
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:531) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:636) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:279) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:384) ~[na:na]
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:406) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1308) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1241) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1127) ~[na:na]
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1056) ~[na:na]
+	at com.alibaba.nacos.common.http.client.request.JdkHttpClientRequest.execute(JdkHttpClientRequest.java:112) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.execute(NacosRestTemplate.java:482) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.common.http.client.NacosRestTemplate.exchangeForm(NacosRestTemplate.java:427) ~[nacos-common-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:603) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:526) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.queryList(NamingProxy.java:407) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor.updateService(HostReactor.java:382) ~[nacos-client-1.4.2.jar:na]
+	at com.alibaba.nacos.client.naming.core.HostReactor$UpdateTask.run(HostReactor.java:464) ~[nacos-client-1.4.2.jar:na]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+21:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 28272 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+21:30:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 28272 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+21:30:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 28272 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+21:34:36.417-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+21:34:36.418-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+21:34:36.418-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [      Thread-14] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+21:34:36.419-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+21:34:36.429-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+21:34:36.452-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+21:34:36.521-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+21:34:36.521-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [       Thread-8] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+21:34:36.550-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+21:34:36.550-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+21:34:36.550-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+21:34:36.552-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+21:34:36.552-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+21:34:36.738-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+21:34:36.738-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+21:34:37.093-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1724333680880,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34426501471819} from /192.168.150.101
+21:34:37.094-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+21:34:37.096-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> []
+21:34:39.741-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+21:34:42.744-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+21:34:42.744-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+21:34:42.744-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+21:34:42.744-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- WARN 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+21:34:42.745-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+21:34:42.749-[LAPTOP-L9SH1VHI][sys]--DEBUG 28272 --- [ionShutdownHook] c.t.l.u.LearningRecordDelayTaskHandler   : 延迟任务停止执行！
+21:34:42.762-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+21:34:42.764-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+21:34:42.776-[LAPTOP-L9SH1VHI][sys]-- INFO 28272 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

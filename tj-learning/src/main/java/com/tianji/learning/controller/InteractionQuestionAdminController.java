@@ -42,4 +42,11 @@ public class InteractionQuestionAdminController {
     public void updateQuestion(@PathVariable("id") Long id, @PathVariable("hidden") Boolean hidden) {
         questionService.updateHiddenQuestion(id,hidden);
     }
+
+    @ApiOperation("根据id查询问题")
+    @GetMapping("{id}")
+    public QuestionAdminVO queryById(@PathVariable("id") Long id) {
+        return questionService.queryById(id);
+    }
+
 }
