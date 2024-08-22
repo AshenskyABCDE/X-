@@ -1,5 +1,6 @@
 package com.tianji.learning.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tianji.api.cache.CategoryCache;
 import com.tianji.api.client.course.CatalogueClient;
@@ -254,5 +255,24 @@ public class InteractionQuestionServiceImpl extends ServiceImpl<InteractionQuest
             voList.add(vo);
         }
         return PageDTO.of(page, voList);
+    }
+
+    @Override
+    public void deleteQuestion(Long id) {
+        InteractionQuestion byId = getById(id);
+        if(byId == null) {
+            throw new DbException("访问的是一个不存在的");
+        }
+        if(!byId.getUserId().equals(UserContext.getUser())) {
+            throw new DbException("删除问题的用户和登录用户不一致");
+        }
+        // select * from ... where quesetion_id = #{id}
+        List<InteractionReply> replies = replyMapper.selectList(
+                new QueryWrapper<InteractionReply>().eq("question_id", id)
+        );
+        removeById(id);
+        for(InteractionReply q : replies) {
+            replyMapper.deleteById(q.getId());
+        }
     }
 }

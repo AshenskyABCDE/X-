@@ -54,4 +54,10 @@ public class InteractionQuestionController {
     public QuestionVO queryQuestionById(@PathVariable("id") Long id){
         return questionService.queryQuestionById(id);
     }
+
+    @ApiOperation("删除问题")
+    @DeleteMapping("/{id}")
+    public void deleteQuestion(@PathVariable("id") Long id) {
+        questionService.deleteQuestion(id);
+    }
 }
