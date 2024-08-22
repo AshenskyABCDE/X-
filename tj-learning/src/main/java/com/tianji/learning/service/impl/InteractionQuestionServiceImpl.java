@@ -1,6 +1,7 @@
 package com.tianji.learning.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tianji.api.cache.CategoryCache;
 import com.tianji.api.client.course.CatalogueClient;
@@ -273,6 +274,16 @@ public class InteractionQuestionServiceImpl extends ServiceImpl<InteractionQuest
         removeById(id);
         for(InteractionReply q : replies) {
             replyMapper.deleteById(q.getId());
+        }
+    }
+
+    @Override
+    public void updateHiddenQuestion(Long id, Boolean hidden) {
+        UpdateWrapper<InteractionQuestion> updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("id",id).set("hidden",hidden);
+        boolean update = update(updateWrapper);
+        if(!update) {
+            throw new DbException("更新问答隐藏失败");
         }
     }
 }
