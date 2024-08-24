@@ -100,6 +100,7 @@ public class LikedRecordServiceImpl extends ServiceImpl<LikedRecordMapper, Liked
         LikedRecord likedRecord = new LikedRecord();
         likedRecord.setUserId(userId);
         likedRecord.setBizId(dto.getBizId());
+        likedRecord.setBizType(dto.getBizType());
         boolean flag = this.save(likedRecord);
         return flag;
     }
