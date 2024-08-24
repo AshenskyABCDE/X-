@@ -22,6 +22,7 @@
         <module name="tj-trade" />
         <module name="tj-common" />
         <module name="tj-pay-service" />
+        <module name="tj-remark" />
         <module name="tj-auth-gateway-sdk" />
         <module name="tj-message-domain" />
         <module name="tj-media" />
@@ -51,6 +52,7 @@
       <module name="tj-pay-api" options="-parameters" />
       <module name="tj-pay-domain" options="-parameters" />
       <module name="tj-pay-service" options="-parameters" />
+      <module name="tj-remark" options="-parameters" />
       <module name="tj-search" options="-parameters" />
       <module name="tj-trade" options="-parameters" />
       <module name="tj-user" options="-parameters" />
