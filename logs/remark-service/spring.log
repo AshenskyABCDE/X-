@@ -1,0 +1,27 @@
+00:18:29.142-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+00:18:29.142-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+00:18:29.184-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+00:18:29.190-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+00:18:29.585-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+00:18:29.587-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@remark-service:192.168.150.1:8091 from beat map.
+00:18:29.587-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@remark-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+00:18:29.594-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+00:18:29.594-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+00:18:30.122-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@remark-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1724516311219,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":48338414669330} from /192.168.150.101
+00:18:30.127-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8091#DEFAULT#DEFAULT_GROUP@@remark-service","ip":"192.168.150.1","port":8091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@remark-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+00:18:30.130-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> []
+00:18:32.598-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+00:18:32.598-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+00:18:33.725-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+00:18:36.729-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+00:18:36.729-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+00:18:36.731-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+00:18:36.731-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+00:18:36.732-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+00:18:36.732-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+00:18:36.745-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+00:18:36.779-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
