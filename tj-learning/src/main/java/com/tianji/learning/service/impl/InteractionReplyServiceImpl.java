@@ -8,6 +8,8 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.mysql.cj.x.protobuf.MysqlxCrud;
 import com.tianji.api.client.user.UserClient;
 import com.tianji.api.dto.user.UserDTO;
+import com.tianji.common.autoconfigure.mq.RabbitMqHelper;
+import com.tianji.common.constants.MqConstants;
 import com.tianji.common.domain.dto.PageDTO;
 import com.tianji.common.exceptions.DbException;
 import com.tianji.common.utils.BeanUtils;
@@ -48,6 +50,7 @@ public class InteractionReplyServiceImpl extends ServiceImpl<InteractionReplyMap
     private final InteractionQuestionServiceImpl questionService;
 
     private final UserClient userClient;
+    private final RabbitMqHelper mqHelper;
 
     @Override
     public void saveReply(ReplyDTO replyDTO) {
@@ -68,6 +71,13 @@ public class InteractionReplyServiceImpl extends ServiceImpl<InteractionReplyMap
                 .set(replyDTO.getIsStudent(), InteractionQuestion::getStatus, QuestionStatus.UN_CHECK)
                 .eq(InteractionQuestion::getId, reply.getQuestionId())
                 .update();
+        if(replyDTO.getIsStudent()) {
+            // 学生才需要累加积分
+            mqHelper.send(
+                    MqConstants.Exchange.LEARNING_EXCHANGE,
+                    MqConstants.Key.WRITE_REPLY,
+                    userId);
+        }
     }
 
     @Override

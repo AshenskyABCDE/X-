@@ -13,6 +13,8 @@ import com.tianji.api.dto.course.CataSimpleInfoDTO;
 import com.tianji.api.dto.course.CourseFullInfoDTO;
 import com.tianji.api.dto.course.CourseSimpleInfoDTO;
 import com.tianji.api.dto.user.UserDTO;
+import com.tianji.common.autoconfigure.mq.RabbitMqHelper;
+import com.tianji.common.constants.MqConstants;
 import com.tianji.common.domain.dto.PageDTO;
 import com.tianji.common.exceptions.BadRequestException;
 import com.tianji.common.exceptions.DbException;
@@ -29,6 +31,7 @@ import com.tianji.learning.domain.vo.QuestionAdminVO;
 import com.tianji.learning.domain.vo.QuestionVO;
 import com.tianji.learning.mapper.InteractionQuestionMapper;
 import com.tianji.learning.mapper.InteractionReplyMapper;
+import com.tianji.learning.mq.msg.SignInMessage;
 import com.tianji.learning.service.IInteractionQuestionService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import lombok.RequiredArgsConstructor;
@@ -57,6 +60,7 @@ public class InteractionQuestionServiceImpl extends ServiceImpl<InteractionQuest
     private final CourseClient courseClient;
     private final CatalogueClient catalogueClient;
     private final CategoryCache categoryCache;
+    private  final RabbitMqHelper mqHelper;
     @Override
     public void saveQuestion(QuestionFormDTO questionDTO) {
         Long userId = UserContext.getUser();
@@ -64,6 +68,10 @@ public class InteractionQuestionServiceImpl extends ServiceImpl<InteractionQuest
         InteractionQuestion interactionQuestion =  BeanUtils.toBean(questionDTO, InteractionQuestion.class);
         interactionQuestion.setUserId(userId);
         save(interactionQuestion);
+        mqHelper.send(
+                MqConstants.Exchange.LEARNING_EXCHANGE,
+                MqConstants.Key.WRITE_REPLY,
+                userId);// 签到积分是基本得分+奖励积分
     }
 
     @Override

@@ -82,6 +82,8 @@ public class UserInfoInterceptor implements HandlerInterceptor {
 
 至此，用户的信息存入请求头的即使如此，可直接调用UserContext.getId，同时这是基于ThreadLocal，所以可以避开不同请求，避免线程安全问题
 
+# 积分功能
+
 
 
 ## 细节：

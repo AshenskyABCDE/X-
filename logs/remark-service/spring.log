@@ -1,27 +1,224 @@
-00:18:29.142-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
-00:18:29.142-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
-00:18:29.184-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [      Thread-13] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
-00:18:29.190-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
-00:18:29.585-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
-00:18:29.587-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@remark-service:192.168.150.1:8091 from beat map.
-00:18:29.587-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@remark-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
-00:18:29.594-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
-00:18:29.594-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
-00:18:30.122-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@remark-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[],\"lastRefTime\":1724516311219,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":48338414669330} from /192.168.150.101
-00:18:30.127-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8091#DEFAULT#DEFAULT_GROUP@@remark-service","ip":"192.168.150.1","port":8091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@remark-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
-00:18:30.130-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(0) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> []
-00:18:32.598-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
-00:18:32.598-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
-00:18:33.725-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
-00:18:36.729-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
-00:18:36.729-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
-00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
-00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
-00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
-00:18:36.730-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
-00:18:36.731-[LAPTOP-L9SH1VHI][sys]-- WARN 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
-00:18:36.731-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
-00:18:36.732-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
-00:18:36.732-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
-00:18:36.745-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-00:18:36.779-[LAPTOP-L9SH1VHI][sys]-- INFO 30672 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+11:43:55.588-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.tianji.remark.RemarkApplication      : The following 1 profile is active: "local"
+11:43:57.330-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+11:43:57.335-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+11:43:57.361-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+11:43:57.779-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=727238f8-df84-383d-a3bf-7b433837c40c
+11:43:58.231-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.235-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.236-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$622/0x000000080153cc68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.239-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.277-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.282-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+11:43:58.681-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8091 (http)
+11:43:58.696-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+11:43:58.696-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+11:43:58.870-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+11:43:58.870-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3228 ms
+11:44:00.618-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+11:44:01.229-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+11:44:01.366-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+11:44:02.950-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+11:44:02.950-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+11:44:02.951-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+11:44:03.034-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8091 (http) with context path ''
+11:44:03.047-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8091, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@remark-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+11:44:03.048-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@remark-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8091, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+11:44:03.052-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP remark-service 192.168.150.1:8091 register finished
+11:44:03.557-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@remark-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8091#DEFAULT#DEFAULT_GROUP@@remark-service\",\"ip\":\"192.168.150.1\",\"port\":8091,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@remark-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1726890246343,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":1575877196652} from /192.168.150.101
+11:44:03.563-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8091#DEFAULT#DEFAULT_GROUP@@remark-service","ip":"192.168.150.1","port":8091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@remark-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+11:44:03.569-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@remark-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8091#DEFAULT#DEFAULT_GROUP@@remark-service","ip":"192.168.150.1","port":8091,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@remark-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+11:44:04.332-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.tianji.remark.RemarkApplication      : Started RemarkApplication in 13.011 seconds (JVM running for 14.331)
+11:44:04.337-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] remark-service+DEFAULT_GROUP
+11:44:04.338-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=remark-service, group=DEFAULT_GROUP, cnt=1
+11:44:04.339-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=remark-service, group=DEFAULT_GROUP
+11:44:04.339-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] remark-service-local.yaml+DEFAULT_GROUP
+11:44:04.340-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=remark-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+11:44:04.340-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=remark-service-local.yaml, group=DEFAULT_GROUP
+11:44:04.340-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] remark-service.yaml+DEFAULT_GROUP
+11:44:04.341-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=remark-service.yaml, group=DEFAULT_GROUP, cnt=1
+11:44:04.341-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=remark-service.yaml, group=DEFAULT_GROUP
+11:44:04.342-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [           main] com.tianji.remark.RemarkApplication      : --/
+---------------------------------------------------------------------------------------
+	Application 'remark-service' is running! Access URLs:
+	Local: 		http://localhost:8091
+	External: 	http://192.168.150.1:8091
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+11:44:05.215-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:44:05.223-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [   scheduling-1] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+11:44:05.338-[LAPTOP-L9SH1VHI][sys]-- INFO 6508 --- [   scheduling-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#4a3509b0:0/SimpleConnection@4d93ca8d [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 55592]
+11:44:05.407-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:44:25.411-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:44:25.414-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:44:45.417-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:44:45.420-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:45:05.424-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:45:05.426-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:45:25.429-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:45:25.432-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:45:45.434-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:45:45.438-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:46:05.441-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:46:05.444-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:46:25.448-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:46:25.451-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:46:45.453-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:46:45.457-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:47:05.458-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:47:05.461-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:47:25.463-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:47:25.466-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:47:45.468-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:47:45.471-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:48:05.475-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:48:05.478-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:48:25.482-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:48:25.489-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:48:45.493-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:48:45.495-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:49:05.498-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:49:05.500-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:49:25.502-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:49:25.504-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:49:45.507-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:49:45.509-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:50:05.513-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:50:05.517-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:50:25.519-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:50:25.521-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:50:45.523-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:50:45.526-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:51:05.530-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:51:05.533-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:51:25.537-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:51:25.538-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:51:45.542-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:51:45.544-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:52:05.548-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:52:05.552-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:52:25.555-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:52:25.557-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:52:45.559-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:52:45.562-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:53:05.566-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:53:05.568-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:53:25.571-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:53:25.573-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:53:45.576-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:53:45.579-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:54:05.582-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:54:05.584-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:54:25.587-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:54:25.590-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:54:45.593-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:54:45.595-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:55:05.597-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:55:05.601-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:55:25.604-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:55:25.606-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:55:45.609-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:55:45.611-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:56:05.614-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:56:05.616-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:56:25.619-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:56:25.622-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:56:45.625-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:56:45.628-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:57:05.629-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:57:05.631-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:57:25.635-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:57:25.638-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:57:45.640-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:57:45.643-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:58:05.645-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:58:05.648-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:58:25.651-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:58:25.654-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:58:45.657-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:58:45.659-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:59:05.661-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:59:05.663-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:59:25.667-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:59:25.669-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+11:59:45.671-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+11:59:45.673-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:00:05.677-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:00:05.681-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:00:25.685-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:00:25.688-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:00:45.691-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:00:45.694-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:01:05.697-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:01:05.699-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:01:25.701-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:01:25.703-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:01:45.706-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:01:45.708-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:02:05.710-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:02:05.712-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:02:25.715-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:02:25.717-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:02:45.721-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:02:45.723-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:03:05.727-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:03:05.728-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:03:25.730-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:03:25.731-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:03:45.734-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:03:45.736-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:04:05.739-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:04:05.741-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:04:25.744-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:04:25.746-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:04:45.749-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:04:45.753-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:05:05.754-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:05:05.758-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:05:25.762-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:05:25.763-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:05:45.766-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:05:45.768-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:06:05.771-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:06:05.772-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:06:25.775-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:06:25.778-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:06:45.780-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:06:45.783-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:07:05.786-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:07:05.787-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:07:25.788-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:07:25.792-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:07:45.795-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:07:45.797-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:08:05.802-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:08:05.804-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:08:25.807-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:08:25.810-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:08:45.812-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:08:45.815-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:09:05.818-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:09:05.825-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:09:25.828-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:09:25.831-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:09:45.833-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:09:45.835-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:10:05.838-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:10:05.840-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:10:25.842-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:10:25.845-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:10:45.847-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:10:45.849-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:11:05.852-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:11:05.854-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:11:25.858-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:11:25.861-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:11:45.864-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:11:45.864-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:12:05.868-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:12:05.870-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:12:25.872-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:12:25.874-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:12:45.876-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:12:45.880-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
+12:13:05.883-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：QA.times.changed， message：[]
+12:13:05.885-[LAPTOP-L9SH1VHI][sys]--DEBUG 6508 --- [   scheduling-1] c.t.c.autoconfigure.mq.RabbitMqHelper    : 准备发送消息，exchange：like.record.topic， RoutingKey：NOTE.times.changed， message：[]
