@@ -4,16 +4,21 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.tianji.common.utils.CollUtils;
 import com.tianji.common.utils.DateUtils;
 import com.tianji.common.utils.UserContext;
+import com.tianji.learning.Constants.RedisConstants;
 import com.tianji.learning.domain.po.PointsRecord;
 import com.tianji.learning.domain.vo.PointsStatisticsVO;
 import com.tianji.learning.enums.PointsRecordType;
 import com.tianji.learning.mapper.PointsRecordMapper;
 import com.tianji.learning.service.IPointsRecordService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.RequiredArgsConstructor;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -27,8 +32,10 @@ import java.util.Map;
  * @since 2024-09-20
  */
 @Service
+@RequiredArgsConstructor
 public class PointsRecordServiceImpl extends ServiceImpl<PointsRecordMapper, PointsRecord> implements IPointsRecordService {
 
+    private final StringRedisTemplate redisTemplate;
     @Override
     public void addPointsRecord(Long userId, Integer points, PointsRecordType pointsRecordType) {
         // 判断积分是否达到上限，type里面的max
@@ -62,6 +69,13 @@ public class PointsRecordServiceImpl extends ServiceImpl<PointsRecordMapper, Poi
         record.setType(pointsRecordType);
         record.setPoints(realPoints);
         this.save(record);
+
+        // 保存累加积分至redis
+        System.out.println("添加到redis");
+        String format = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMM"));
+        String key = RedisConstants.POINTS_BOARD_KEY_PREFIX + format;
+        System.out.println(key);
+        redisTemplate.opsForZSet().incrementScore(key, userId.toString(), realPoints);
     }
 
     @Override

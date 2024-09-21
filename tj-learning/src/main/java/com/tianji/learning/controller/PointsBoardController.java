@@ -4,8 +4,11 @@ package com.tianji.learning.controller;
 import com.tianji.common.utils.BeanUtils;
 import com.tianji.common.utils.CollUtils;
 import com.tianji.learning.domain.po.PointsBoardSeason;
+import com.tianji.learning.domain.query.PointsBoardQuery;
 import com.tianji.learning.domain.vo.PointsBoardSeasonVO;
+import com.tianji.learning.domain.vo.PointsBoardVO;
 import com.tianji.learning.service.IPointsBoardSeasonService;
+import com.tianji.learning.service.IPointsBoardService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -32,6 +35,8 @@ import java.util.List;
 public class PointsBoardController {
 
     private final IPointsBoardSeasonService seasonService;
+
+    private final IPointsBoardService boardService;
     @ApiOperation("查询赛季信息列表")
     @GetMapping("/seasons/list")
     public List<PointsBoardSeasonVO> queryPointsBoardSeasons(){
@@ -47,4 +52,11 @@ public class PointsBoardController {
         // 3.返回VO
         return BeanUtils.copyToList(list, PointsBoardSeasonVO.class);
     }
+
+    @ApiOperation("查询当前赛季和历史赛季积分榜")
+    @GetMapping
+    public PointsBoardVO queryPointsBoard(PointsBoardQuery query) {
+        return boardService.queryPointsBoard(query);
+    }
+
 }
