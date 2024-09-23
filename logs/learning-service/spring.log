@@ -19923,3 +19923,311 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown column 'rank' in 'field lis
 17:45:41.972-[LAPTOP-L9SH1VHI][sys]-- INFO 22904 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
 17:45:41.974-[LAPTOP-L9SH1VHI][sys]-- INFO 22904 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 17:45:41.987-[LAPTOP-L9SH1VHI][sys]-- INFO 22904 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+17:45:51.304-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.tianji.learning.LearningApplication  : The following 1 profile is active: "local"
+17:45:52.478-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+17:45:52.483-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+17:45:52.516-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+17:45:52.957-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e716a30e-1526-32a7-bed2-bdd6fdf26c29
+17:45:53.539-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration' of type [org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.544-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.545-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'loadBalancerClientsDefaultsMappingsProvider' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration$$Lambda$684/0x00000008015bf008] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.549-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'defaultsBindHandlerAdvisor' of type [org.springframework.cloud.commons.config.DefaultsBindHandlerAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.590-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.cloud.sentinel-com.alibaba.cloud.sentinel.SentinelProperties' of type [com.alibaba.cloud.sentinel.SentinelProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.595-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration' of type [com.alibaba.cloud.sentinel.custom.SentinelAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:45:53.963-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+17:45:53.977-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+17:45:53.977-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.65]
+17:45:54.145-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+17:45:54.145-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2817 ms
+17:45:54.384-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.t.c.a.mybatis.MybatisConfig            : 运行了
+17:45:55.369-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'user-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:55.701-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'search-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:55.736-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:55.780-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:55.870-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:57.473-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.c.sentinel.SentinelWebMvcConfigurer  : [Sentinel Starter] register SentinelWebInterceptor with urlPatterns: [/**].
+17:45:58.077-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'auth-service' URL not provided. Will try picking an instance via load-balancing.
+17:45:58.140-[LAPTOP-L9SH1VHI][sys]--DEBUG 14304 --- [           main] c.t.c.a.redisson.RedissonConfig          : 尝试初始化RedissonClient
+17:45:58.251-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] org.redisson.Version                     : Redisson 3.13.6
+17:45:58.773-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [sson-netty-4-14] o.r.c.pool.MasterPubSubConnectionPool    : 1 connections initialized for /192.168.150.101:6379
+17:45:58.803-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [sson-netty-4-18] o.r.c.pool.MasterConnectionPool          : 24 connections initialized for /192.168.150.101:6379
+17:45:58.854-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config init.
+17:45:58.856-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.t.c.autoconfigure.xxljob.XxlJobConfig  : >>>>>>>>>>> xxl-job config end.
+17:46:00.532-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:createTableJob, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@1ccf1819[class com.tianji.learning.task.PointsBoardPersistentHandler$$EnhancerBySpringCGLIB$$f4b2a3e5#createPointsBoardTableOfLastSeanson]
+17:46:00.533-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:clearPointsBoardFromRedis, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@4a6ac443[class com.tianji.learning.task.PointsBoardPersistentHandler$$EnhancerBySpringCGLIB$$f4b2a3e5#clearPointsBoardFromRedis]
+17:46:00.533-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.xxl.job.core.executor.XxlJobExecutor   : >>>>>>>>>>> xxl-job register jobhandler success, name:savePointsBoard2DB, jobHandler:com.xxl.job.core.handler.impl.MethodJobHandler@5ab45d66[class com.tianji.learning.task.PointsBoardPersistentHandler$$EnhancerBySpringCGLIB$$f4b2a3e5#savePointsBoard2DB]
+17:46:00.568-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'course-service' URL not provided. Will try picking an instance via load-balancing.
+17:46:00.592-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'exam-service' URL not provided. Will try picking an instance via load-balancing.
+17:46:00.621-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'learning-service' URL not provided. Will try picking an instance via load-balancing.
+17:46:00.651-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'remark-service' URL not provided. Will try picking an instance via load-balancing.
+17:46:00.676-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.c.openfeign.FeignClientFactoryBean   : For 'trade-service' URL not provided. Will try picking an instance via load-balancing.
+17:46:00.970-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server start success, nettype = class com.xxl.job.core.server.EmbedServer, port = 9999
+17:46:00.985-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:46:00.985-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Environment :null
+17:46:00.986-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : initializer namespace from System Property :null
+17:46:01.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.101","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:01.039-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.101","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:01.061-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path ''
+17:46:01.068-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : [BEAT] adding beat: BeatInfo{port=8090, ip='192.168.150.1', weight=1.0, serviceName='DEFAULT_GROUP@@learning-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+17:46:01.070-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.alibaba.nacos.client.naming          : [REGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 registering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+17:46:01.075-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP learning-service 192.168.150.1:8090 register finished
+17:46:01.565-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.1\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000},{\"instanceId\":\"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.101\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1727084765437,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":25878361361900} from /192.168.150.101
+17:46:01.569-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [g.push.receiver] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:01.571-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.101","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:02.776-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Attempting to connect to: [192.168.150.101:5672]
+17:46:02.871-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#733345f5:0/SimpleConnection@557635ca [delegate=amqp://tjxt@192.168.150.101:5672//tjxt, localPort= 57392]
+17:46:03.026-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.tianji.learning.LearningApplication  : Started LearningApplication in 15.731 seconds (JVM running for 16.931)
+17:46:03.030-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service-local.yaml+DEFAULT_GROUP
+17:46:03.032-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service-local.yaml, group=DEFAULT_GROUP, cnt=1
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service-local.yaml, group=DEFAULT_GROUP
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service.yaml+DEFAULT_GROUP
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service.yaml, group=DEFAULT_GROUP, cnt=1
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service.yaml, group=DEFAULT_GROUP
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.n.client.config.impl.ClientWorker    : [fixed-192.168.150.101_8848] [subscribe] learning-service+DEFAULT_GROUP
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.nacos.client.config.impl.CacheData   : [fixed-192.168.150.101_8848] [add-listener] ok, tenant=, dataId=learning-service, group=DEFAULT_GROUP, cnt=1
+17:46:03.033-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] c.a.c.n.refresh.NacosContextRefresher    : listening config: dataId=learning-service, group=DEFAULT_GROUP
+17:46:03.034-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [           main] com.tianji.learning.LearningApplication  : --/
+---------------------------------------------------------------------------------------
+	Application 'learning-service' is running! Access URLs:
+	Local: 		http://localhost:8090
+	External: 	http://192.168.150.1:8090
+	Profile(s): 	[local]
+---------------------------------------------------------------------------------------
+17:46:07.624-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [nio-8090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:46:07.625-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+17:46:07.629-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [nio-8090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+17:46:08.297-[LAPTOP-L9SH1VHI][1ffbef4076fd46afaaf74dca5b59374d]--DEBUG 14304 --- [nio-8090-exec-1] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:46:08.431-[LAPTOP-L9SH1VHI][1ffbef4076fd46afaaf74dca5b59374d]-- INFO 14304 --- [nio-8090-exec-1] com.alibaba.nacos.client.naming          : new ips(2) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"192.168.150.1#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.101","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:08.434-[LAPTOP-L9SH1VHI][1ffbef4076fd46afaaf74dca5b59374d]-- INFO 14304 --- [nio-8090-exec-1] com.alibaba.nacos.client.naming          : current ips:(2) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"192.168.150.1#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.1","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000},{"instanceId":"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service","ip":"192.168.150.101","port":8082,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:08.532-[LAPTOP-L9SH1VHI][1ffbef4076fd46afaaf74dca5b59374d]--DEBUG 14304 --- [nio-8090-exec-1] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (234ms)
+17:46:08.692-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]-- WARN 14304 --- [nio-8090-exec-3] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @2f54a33d
+17:46:08.729-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]-- INFO 14304 --- [nio-8090-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+17:46:09.015-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@user-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.1#8082#DEFAULT#DEFAULT_GROUP@@user-service\",\"ip\":\"192.168.150.1\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@user-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000},{\"instanceId\":\"192.168.150.101#8082#DEFAULT#DEFAULT_GROUP@@user-service\",\"ip\":\"192.168.150.101\",\"port\":8082,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@user-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1727084772891,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":25885815924397} from /192.168.150.101
+17:46:09.078-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]-- INFO 14304 --- [nio-8090-exec-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+17:46:09.093-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:46:09.114-[LAPTOP-L9SH1VHI][596a53d5b4374b5b906e829227d6c649]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.P.selectList                     : ==>  Preparing: SELECT id,name,begin_time,end_time FROM points_board_season WHERE (begin_time <= ?)
+17:46:09.129-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:46:09.132-[LAPTOP-L9SH1VHI][596a53d5b4374b5b906e829227d6c649]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.P.selectList                     : ==> Parameters: 2024-09-23T17:46:08.577261900(LocalDateTime)
+17:46:09.179-[LAPTOP-L9SH1VHI][596a53d5b4374b5b906e829227d6c649]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.P.selectList                     : <==      Total: 12
+17:46:09.181-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:46:09.219-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:46:09.264-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]-- INFO 14304 --- [nio-8090-exec-3] com.alibaba.nacos.client.naming          : new ips(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:09.268-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]-- INFO 14304 --- [nio-8090-exec-3] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@course-service -> [{"instanceId":"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service","ip":"192.168.150.101","port":8086,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@course-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+17:46:09.354-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (135ms)
+17:46:09.369-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:46:09.370-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:46:09.375-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:46:09.377-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:46:09.420-[LAPTOP-L9SH1VHI][41881abba5e04844b32c91b88fe4cdd2]--DEBUG 14304 --- [nio-8090-exec-3] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (43ms)
+17:46:09.648-[LAPTOP-L9SH1VHI][e9c0cbde53904715a31497a50ab22086]--DEBUG 14304 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:46:09.691-[LAPTOP-L9SH1VHI][e9c0cbde53904715a31497a50ab22086]--DEBUG 14304 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (42ms)
+17:46:09.823-[LAPTOP-L9SH1VHI][sys]-- INFO 14304 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@course-service\",\"clusters\":\"\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8086#DEFAULT#DEFAULT_GROUP@@course-service\",\"ip\":\"192.168.150.101\",\"port\":8086,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@course-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1727084773699,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":25886624016335} from /192.168.150.101
+17:46:10.816-[LAPTOP-L9SH1VHI][101fa0ee15884d2fb920dee7bdee4b1b]--DEBUG 14304 --- [nio-8090-exec-5] c.t.l.m.P.selectList                     : ==>  Preparing: SELECT id,name,begin_time,end_time FROM points_board_season WHERE (begin_time <= ?)
+17:46:10.817-[LAPTOP-L9SH1VHI][101fa0ee15884d2fb920dee7bdee4b1b]--DEBUG 14304 --- [nio-8090-exec-5] c.t.l.m.P.selectList                     : ==> Parameters: 2024-09-23T17:46:10.809465300(LocalDateTime)
+17:46:10.819-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:46:10.820-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:46:10.824-[LAPTOP-L9SH1VHI][101fa0ee15884d2fb920dee7bdee4b1b]--DEBUG 14304 --- [nio-8090-exec-5] c.t.l.m.P.selectList                     : <==      Total: 12
+17:46:10.829-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:46:10.830-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:46:10.846-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (15ms)
+17:46:10.849-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:46:10.850-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:46:10.853-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:46:10.854-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:46:10.882-[LAPTOP-L9SH1VHI][d16a7d6d6a834b6d921ab3e1e8e8b2a4]--DEBUG 14304 --- [nio-8090-exec-6] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (28ms)
+17:46:11.833-[LAPTOP-L9SH1VHI][68a1ea00f10f429286dfcd5402bf038e]--DEBUG 14304 --- [nio-8090-exec-7] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:46:11.847-[LAPTOP-L9SH1VHI][68a1ea00f10f429286dfcd5402bf038e]--DEBUG 14304 --- [nio-8090-exec-7] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (12ms)
+17:46:13.423-[LAPTOP-L9SH1VHI][74293bc30dda4b13a8d35dfd5c1fb6c3]--DEBUG 14304 --- [nio-8090-exec-8] c.t.l.m.P.selectList                     : ==>  Preparing: SELECT id,name,begin_time,end_time FROM points_board_season WHERE (begin_time <= ?)
+17:46:13.424-[LAPTOP-L9SH1VHI][74293bc30dda4b13a8d35dfd5c1fb6c3]--DEBUG 14304 --- [nio-8090-exec-8] c.t.l.m.P.selectList                     : ==> Parameters: 2024-09-23T17:46:13.418143(LocalDateTime)
+17:46:13.428-[LAPTOP-L9SH1VHI][74293bc30dda4b13a8d35dfd5c1fb6c3]--DEBUG 14304 --- [nio-8090-exec-8] c.t.l.m.P.selectList                     : <==      Total: 12
+17:46:13.491-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:46:13.491-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:46:13.495-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:46:13.497-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:46:13.514-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (18ms)
+17:46:13.518-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:46:13.518-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:46:13.522-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:46:13.524-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:46:13.549-[LAPTOP-L9SH1VHI][ec76234f9d03428d9193efe1ea103406]--DEBUG 14304 --- [nio-8090-exec-9] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (24ms)
+17:46:15.590-[LAPTOP-L9SH1VHI][7afd88fac72e4d8ab5ae0e9fba2e75bd]--DEBUG 14304 --- [io-8090-exec-10] c.t.l.m.PointsBoardMapper.selectList     : ==>  Preparing: SELECT id,user_id,points FROM points_board_2 WHERE (user_id = ?)
+17:46:15.590-[LAPTOP-L9SH1VHI][7afd88fac72e4d8ab5ae0e9fba2e75bd]--DEBUG 14304 --- [io-8090-exec-10] c.t.l.m.PointsBoardMapper.selectList     : ==> Parameters: 2(Long)
+17:46:15.710-[LAPTOP-L9SH1VHI][7afd88fac72e4d8ab5ae0e9fba2e75bd]--ERROR 14304 --- [io-8090-exec-10] c.t.c.a.m.advice.CommonExceptionAdvice   : 其他异常 uri : /boards -> 
+org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: java.sql.SQLSyntaxErrorException: Table 'tj_learning.points_board_2' doesn't exist
+### The error may exist in com/tianji/learning/mapper/PointsBoardMapper.java (best guess)
+### The error may involve defaultParameterMap
+### The error occurred while setting parameters
+### SQL: SELECT  id,user_id,points  FROM points_board_2     WHERE (user_id = ?)
+### Cause: java.sql.SQLSyntaxErrorException: Table 'tj_learning.points_board_2' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Table 'tj_learning.points_board_2' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239) ~[spring-jdbc-5.3.22.jar:5.3.22]
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70) ~[spring-jdbc-5.3.22.jar:5.3.22]
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:441) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at jdk.proxy2/jdk.proxy2.$Proxy118.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:224) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:166) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:77) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy160.selectList(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.core.mapper.BaseMapper.selectOne(BaseMapper.java:172) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:733) ~[na:na]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$DefaultMethodInvoker.invoke(MybatisMapperProxy.java:162) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.5.3.1.jar:3.5.3.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy160.selectOne(Unknown Source) ~[na:na]
+	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.lambda$one$cd9f9c92$1(ChainQuery.java:48) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.conditions.ChainWrapper.execute(ChainWrapper.java:63) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.one(ChainQuery.java:48) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.baomidou.mybatisplus.extension.conditions.query.ChainQuery.oneOpt(ChainQuery.java:58) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at com.tianji.learning.service.impl.PointsBoardServiceImpl.queryMyHistoryBoard(PointsBoardServiceImpl.java:140) ~[classes/:na]
+	at com.tianji.learning.service.impl.PointsBoardServiceImpl.queryPointsBoard(PointsBoardServiceImpl.java:65) ~[classes/:na]
+	at com.tianji.learning.service.impl.PointsBoardServiceImpl$$FastClassBySpringCGLIB$$80bfce97.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704) ~[spring-aop-5.3.22.jar:5.3.22]
+	at com.tianji.learning.service.impl.PointsBoardServiceImpl$$EnhancerBySpringCGLIB$$d7afc34f.queryPointsBoard(<generated>) ~[classes/:na]
+	at com.tianji.learning.controller.PointsBoardController.queryPointsBoard(PointsBoardController.java:59) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.22.jar:5.3.22]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.65.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117) ~[spring-web-5.3.22.jar:5.3.22]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at com.tianji.common.filters.RequestIdFilter.doFilter(RequestIdFilter.java:26) ~[classes/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.65.jar:9.0.65]
+	at java.base/java.lang.Thread.run(Thread.java:1589) ~[na:na]
+Caused by: java.sql.SQLSyntaxErrorException: Table 'tj_learning.points_board_2' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.23.jar:8.0.23]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.execute(ProxyPreparedStatement.java:44) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.execute(HikariProxyPreparedStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy3/jdk.proxy3.$Proxy257.execute(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:64) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:79) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy255.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:63) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:325) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.10.jar:3.5.10]
+	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:81) ~[mybatis-plus-extension-3.5.3.1.jar:3.5.3.1]
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:62) ~[mybatis-3.5.10.jar:3.5.10]
+	at jdk.proxy2/jdk.proxy2.$Proxy254.query(Unknown Source) ~[na:na]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:151) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:145) ~[mybatis-3.5.10.jar:3.5.10]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.10.jar:3.5.10]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:427) ~[mybatis-spring-2.0.7.jar:2.0.7]
+	... 76 common frames omitted
+17:46:47.271-[LAPTOP-L9SH1VHI][9c9129ba6df941c58223caaaa0cf36bf]--DEBUG 14304 --- [nio-8090-exec-1] c.t.l.m.P.selectList                     : ==>  Preparing: SELECT id,name,begin_time,end_time FROM points_board_season WHERE (begin_time <= ?)
+17:46:47.271-[LAPTOP-L9SH1VHI][9c9129ba6df941c58223caaaa0cf36bf]--DEBUG 14304 --- [nio-8090-exec-1] c.t.l.m.P.selectList                     : ==> Parameters: 2024-09-23T17:46:47.267694400(LocalDateTime)
+17:46:47.276-[LAPTOP-L9SH1VHI][9c9129ba6df941c58223caaaa0cf36bf]--DEBUG 14304 --- [nio-8090-exec-1] c.t.l.m.P.selectList                     : <==      Total: 12
+17:46:47.423-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:46:47.424-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:46:47.429-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:46:47.431-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:46:47.462-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (30ms)
+17:46:47.468-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:46:47.468-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:46:47.476-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:46:47.477-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:46:47.526-[LAPTOP-L9SH1VHI][e9f543e2697c4846bdc5d25003bd7aea]--DEBUG 14304 --- [nio-8090-exec-2] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (48ms)
+17:47:05.219-[LAPTOP-L9SH1VHI][c544acb8674847c79f589a58e6f427dc]--DEBUG 14304 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:05.241-[LAPTOP-L9SH1VHI][c544acb8674847c79f589a58e6f427dc]--DEBUG 14304 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (21ms)
+17:47:12.335-[LAPTOP-L9SH1VHI][ab51894453de44039c8b2b51c0c8a8f3]--DEBUG 14304 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:12.348-[LAPTOP-L9SH1VHI][ab51894453de44039c8b2b51c0c8a8f3]--DEBUG 14304 --- [nio-8090-exec-4] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (12ms)
+17:47:14.967-[LAPTOP-L9SH1VHI][4f9df3a28cd64a65bc406f68c9db4e4d]--DEBUG 14304 --- [nio-8090-exec-5] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:14.983-[LAPTOP-L9SH1VHI][4f9df3a28cd64a65bc406f68c9db4e4d]--DEBUG 14304 --- [nio-8090-exec-5] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (15ms)
+17:47:17.307-[LAPTOP-L9SH1VHI][46bad20e83b441559fff6d2143238dbe]--DEBUG 14304 --- [nio-8090-exec-6] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:17.317-[LAPTOP-L9SH1VHI][46bad20e83b441559fff6d2143238dbe]--DEBUG 14304 --- [nio-8090-exec-6] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (10ms)
+17:47:24.429-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:47:24.430-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:47:24.433-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:47:24.436-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:47:24.457-[LAPTOP-L9SH1VHI][000dcb86c3ee4c3faa5e206e6970953f]--DEBUG 14304 --- [nio-8090-exec-8] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:24.508-[LAPTOP-L9SH1VHI][000dcb86c3ee4c3faa5e206e6970953f]--DEBUG 14304 --- [nio-8090-exec-8] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (50ms)
+17:47:24.519-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (84ms)
+17:47:24.555-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:47:24.556-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:47:24.560-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:47:24.561-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:47:24.603-[LAPTOP-L9SH1VHI][56346d3428c14714bb5a44520f678099]--DEBUG 14304 --- [nio-8090-exec-7] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (41ms)
+17:47:25.451-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ? AND status = ?) ORDER BY latest_learn_time DESC limit 1
+17:47:25.452-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: 2(Long), 1(Integer)
+17:47:25.457-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 1
+17:47:25.458-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] ---> GET http://course-service/course/3?withCatalogue=false&withTeachers=false HTTP/1.1
+17:47:25.504-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.tianji.api.client.course.CourseClient  : [CourseClient#getCourseInfoById] <--- HTTP/1.1 200  (45ms)
+17:47:25.507-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : ==>  Preparing: SELECT COUNT( * ) AS total FROM learning_lesson WHERE (user_id = ?)
+17:47:25.507-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : ==> Parameters: 2(Long)
+17:47:25.517-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.l.m.L.selectCount                    : <==      Total: 1
+17:47:25.518-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] ---> GET http://course-service/catalogues/batchQuery?ids=31 HTTP/1.1
+17:47:25.552-[LAPTOP-L9SH1VHI][58768563c1b6468abe246f94220cb739]--DEBUG 14304 --- [nio-8090-exec-9] c.t.api.client.course.CatalogueClient    : [CatalogueClient#batchQueryCatalogue] <--- HTTP/1.1 200  (33ms)
+17:47:26.660-[LAPTOP-L9SH1VHI][670da13703f6434c8d01d97d3665fcb1]--DEBUG 14304 --- [io-8090-exec-10] c.t.l.m.P.selectList                     : ==>  Preparing: SELECT id,name,begin_time,end_time FROM points_board_season WHERE (begin_time <= ?)
+17:47:26.661-[LAPTOP-L9SH1VHI][670da13703f6434c8d01d97d3665fcb1]--DEBUG 14304 --- [io-8090-exec-10] c.t.l.m.P.selectList                     : ==> Parameters: 2024-09-23T17:47:26.656357800(LocalDateTime)
+17:47:26.671-[LAPTOP-L9SH1VHI][670da13703f6434c8d01d97d3665fcb1]--DEBUG 14304 --- [io-8090-exec-10] c.t.l.m.P.selectList                     : <==      Total: 12
+17:47:26.697-[LAPTOP-L9SH1VHI][a9580275525e4bdf83f53dc78d63e46c]--DEBUG 14304 --- [nio-8090-exec-1] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=2 HTTP/1.1
+17:47:26.720-[LAPTOP-L9SH1VHI][a9580275525e4bdf83f53dc78d63e46c]--DEBUG 14304 --- [nio-8090-exec-1] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (23ms)
+17:48:07.336-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectList     : ==>  Preparing: SELECT id,user_id,points FROM points_board_11 WHERE (user_id = ?)
+17:48:07.337-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectList     : ==> Parameters: 2(Long)
+17:48:07.342-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectList     : <==      Total: 1
+17:48:07.402-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.P.selectPage_mpCount             : ==>  Preparing: SELECT COUNT(*) AS total FROM points_board_11
+17:48:07.403-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.P.selectPage_mpCount             : ==> Parameters: 
+17:48:07.405-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.P.selectPage_mpCount             : <==      Total: 1
+17:48:07.409-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectPage     : ==>  Preparing: SELECT id,user_id,points FROM points_board_11 LIMIT ?
+17:48:07.410-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectPage     : ==> Parameters: 10(Long)
+17:48:07.412-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] c.t.l.m.PointsBoardMapper.selectPage     : <==      Total: 10
+17:48:07.415-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] ---> GET http://user-service/users/list?ids=129&ids=2&ids=1628197516895846402&ids=1628197516270895106&ids=1628197517835370497&ids=1628197519030747137&ids=1628197518439350274&ids=1628197518737145858&ids=1628197517529186306&ids=1628197520280649730 HTTP/1.1
+17:48:07.460-[LAPTOP-L9SH1VHI][0b18276bed3a491eb087eab235646179]--DEBUG 14304 --- [nio-8090-exec-3] com.tianji.api.client.user.UserClient    : [UserClient#queryUserByIds] <--- HTTP/1.1 200  (45ms)
