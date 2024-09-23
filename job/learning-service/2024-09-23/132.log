@@ -1,0 +1,75 @@
+2024-09-23 16:41:38 [com.xxl.job.core.thread.JobThread#run]-[133]-[xxl-job, JobThread-12-1727080898380] <br>----------- xxl-job job execute start -----------<br>----------- Param:
+2024-09-23 16:41:39 [com.xxl.job.core.thread.JobThread#run]-[204]-[xxl-job, JobThread-12-1727080898380] <br>----------- JobThread Exception:java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:119)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at com.xxl.job.core.handler.impl.MethodJobHandler.execute(MethodJobHandler.java:31)
+	at com.xxl.job.core.thread.JobThread.run(JobThread.java:166)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: com.tianji.learning.mapper.PointsBoardMapper.insert (batch index #1) failed. Cause: java.sql.BatchUpdateException: Table 'tj_learning.points_board_11' doesn't exist
+; bad SQL grammar []; nested exception is java.sql.BatchUpdateException: Table 'tj_learning.points_board_11' doesn't exist
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:91)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:192)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:217)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.executeBatch(ServiceImpl.java:240)
+	at com.baomidou.mybatisplus.extension.service.impl.ServiceImpl.saveBatch(ServiceImpl.java:136)
+	at com.baomidou.mybatisplus.extension.service.IService.saveBatch(IService.java:73)
+	at com.baomidou.mybatisplus.extension.service.IService$$FastClassBySpringCGLIB$$f8525d18.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.tianji.learning.service.impl.PointsBoardServiceImpl$$EnhancerBySpringCGLIB$$17c40162.saveBatch(<generated>)
+	at com.tianji.learning.task.PointsBoardPersistentHandler.savePointsBoard2DB(PointsBoardPersistentHandler.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	... 3 more
+Caused by: java.sql.BatchUpdateException: Table 'tj_learning.points_board_11' doesn't exist
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at com.mysql.cj.util.Util.handleNewInstance(Util.java:192)
+	at com.mysql.cj.util.Util.getInstance(Util.java:167)
+	at com.mysql.cj.util.Util.getInstance(Util.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createBatchUpdateException(SQLError.java:224)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchSerially(ClientPreparedStatement.java:853)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchInternal(ClientPreparedStatement.java:435)
+	at com.mysql.cj.jdbc.StatementImpl.executeBatch(StatementImpl.java:794)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeBatch(ProxyStatement.java:127)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeBatch(HikariProxyPreparedStatement.java)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:78)
+	at jdk.proxy3/jdk.proxy3.$Proxy234.executeBatch(Unknown Source)
+	at org.apache.ibatis.executor.BatchExecutor.doFlushStatements(BatchExecutor.java:123)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:129)
+	at org.apache.ibatis.executor.BaseExecutor.flushStatements(BaseExecutor.java:122)
+	at org.apache.ibatis.executor.CachingExecutor.flushStatements(CachingExecutor.java:114)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:64)
+	at jdk.proxy2/jdk.proxy2.$Proxy231.flushStatements(Unknown Source)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.flushStatements(DefaultSqlSession.java:249)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.lambda$executeBatch$1(SqlHelper.java:224)
+	at com.baomidou.mybatisplus.extension.toolkit.SqlHelper.executeBatch(SqlHelper.java:182)
+	... 21 more
+Caused by: java.sql.SQLSyntaxErrorException: Table 'tj_learning.points_board_11' doesn't exist
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1092)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeBatchSerially(ClientPreparedStatement.java:832)
+	... 40 more
+<br>----------- xxl-job job execute end(error) -----------
+2024-09-23 16:41:39 [com.xxl.job.core.thread.TriggerCallbackThread#callbackLog]-[197]-[xxl-job, executor TriggerCallbackThread] <br>----------- xxl-job job callback finish.
+2024-09-23 16:42:49 [com.xxl.job.core.thread.JobThread#run]-[194]-[xxl-job, JobThread-12-1727080898380] <br>----------- JobThread toStop, stopReason:web container destroy and kill the job.
+2024-09-23 16:42:49 [com.xxl.job.core.thread.JobThread#run]-[204]-[xxl-job, JobThread-12-1727080898380] <br>----------- JobThread Exception:java.lang.InterruptedException
+	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1681)
+	at java.base/java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:460)
+	at com.xxl.job.core.thread.JobThread.run(JobThread.java:114)
+<br>----------- xxl-job job execute end(error) -----------

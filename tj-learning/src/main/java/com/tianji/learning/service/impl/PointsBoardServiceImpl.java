@@ -1,29 +1,33 @@
 package com.tianji.learning.service.impl;
 
+import cn.hutool.core.date.DateTime;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.tianji.api.client.user.UserClient;
 import com.tianji.api.dto.user.UserDTO;
 import com.tianji.common.exceptions.BizIllegalException;
 import com.tianji.common.utils.CollUtils;
 import com.tianji.common.utils.UserContext;
+import com.tianji.learning.Constants.LearningContstants;
 import com.tianji.learning.Constants.RedisConstants;
 import com.tianji.learning.domain.po.PointsBoard;
+import com.tianji.learning.domain.po.PointsBoardSeason;
 import com.tianji.learning.domain.query.PointsBoardQuery;
 import com.tianji.learning.domain.vo.PointsBoardItemVO;
 import com.tianji.learning.domain.vo.PointsBoardVO;
 import com.tianji.learning.mapper.PointsBoardMapper;
+import com.tianji.learning.service.IPointsBoardSeasonService;
 import com.tianji.learning.service.IPointsBoardService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tianji.learning.utils.TableInfoContext;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -39,6 +43,8 @@ import java.util.stream.Collectors;
 public class PointsBoardServiceImpl extends ServiceImpl<PointsBoardMapper, PointsBoard> implements IPointsBoardService {
 
     private final StringRedisTemplate redisTemplate;
+
+    private final IPointsBoardSeasonService seasonService;
 
     private final UserClient userClient;
     @Override
@@ -62,6 +68,8 @@ public class PointsBoardServiceImpl extends ServiceImpl<PointsBoardMapper, Point
         List<PointsBoard> list = new ArrayList<>();
         if(season) {
             list = queryCurrentBoard(key , query.getPageNo(), query.getPageSize());
+        } else {
+            list = queryHistoryBoard(query);
         }
 
         Set<Long> collect = list.stream().map(PointsBoard::getUserId).collect(Collectors.toSet());
@@ -86,7 +94,23 @@ public class PointsBoardServiceImpl extends ServiceImpl<PointsBoardMapper, Point
         return vo;
     }
 
-    private List<PointsBoard> queryCurrentBoard(String key, Integer pageNo, Integer pageSize) {
+    private List<PointsBoard> queryHistoryBoard(PointsBoardQuery query) {
+        String key = LearningContstants.POINTS_BOARD_TABLE_PREFIX + query.getSeason();
+        TableInfoContext.setInfo(key);
+        Page<PointsBoard> page = page(query.toMpPage());
+        List<PointsBoard> records = page.getRecords();
+        if(CollUtils.isEmpty(records)) {
+            return CollUtils.emptyList();
+        }
+        for(PointsBoard board : records) {
+            board.setRank(board.getId().intValue());
+        }
+        System.out.println(records);
+        return records;
+    }
+
+    @Override
+    public List<PointsBoard> queryCurrentBoard(String key, Integer pageNo, Integer pageSize) {
         int from = (pageNo - 1) * pageSize;
         Set<ZSetOperations.TypedTuple<String>> typedTuples = redisTemplate.opsForZSet().reverseRangeWithScores(key, from, from + pageSize - 1);
         if (CollUtils.isEmpty(typedTuples)) {
@@ -111,7 +135,15 @@ public class PointsBoardServiceImpl extends ServiceImpl<PointsBoardMapper, Point
     }
 
     private PointsBoard queryMyHistoryBoard(Long season) {
-        return null;
+        Long userId = UserContext.getUser();
+        TableInfoContext.setInfo(LearningContstants.POINTS_BOARD_TABLE_PREFIX + season);
+        Optional<PointsBoard> pointsBoard = lambdaQuery().eq(PointsBoard::getUserId, userId).oneOpt();
+        if(pointsBoard.isEmpty()) {
+            return null;
+        }
+        PointsBoard board = pointsBoard.get();
+        board.setRank(board.getId().intValue());
+        return board;
     }
 
     private PointsBoard queryMYCurrentBoard(String key) {

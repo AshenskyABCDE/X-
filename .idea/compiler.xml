@@ -31,6 +31,9 @@
         <module name="tj-auth-common" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tj-xxljob" target="17" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -56,6 +59,7 @@
       <module name="tj-search" options="-parameters" />
       <module name="tj-trade" options="-parameters" />
       <module name="tj-user" options="-parameters" />
+      <module name="tj-xxljob" options="-parameters" />
     </option>
   </component>
 </project>
