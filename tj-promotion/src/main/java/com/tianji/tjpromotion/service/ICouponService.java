@@ -1,8 +1,12 @@
 package com.tianji.tjpromotion.service;
 
+import com.tianji.common.domain.dto.PageDTO;
 import com.tianji.tjpromotion.domain.dto.CouponFormDTO;
+import com.tianji.tjpromotion.domain.dto.CouponIssueFormDTO;
 import com.tianji.tjpromotion.domain.po.Coupon;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.tianji.tjpromotion.domain.query.CouponQuery;
+import com.tianji.tjpromotion.domain.vo.CouponPageVO;
 
 /**
  * <p>
@@ -15,4 +19,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface ICouponService extends IService<Coupon> {
 
     void saveCoupon(CouponFormDTO dto);
+
+    PageDTO<CouponPageVO> queryCouponPage(CouponQuery query);
+
+    void issueCoupon(CouponIssueFormDTO dto);
 }
