@@ -14,10 +14,12 @@ import com.tianji.tjpromotion.domain.po.CouponScope;
 import com.tianji.tjpromotion.domain.query.CouponQuery;
 import com.tianji.tjpromotion.domain.vo.CouponPageVO;
 import com.tianji.tjpromotion.enums.CouponStatus;
+import com.tianji.tjpromotion.enums.ObtainType;
 import com.tianji.tjpromotion.mapper.CouponMapper;
 import com.tianji.tjpromotion.service.ICouponScopeService;
 import com.tianji.tjpromotion.service.ICouponService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.tianji.tjpromotion.service.IExchangeCodeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -39,6 +41,8 @@ import java.util.List;
 public class CouponServiceImpl extends ServiceImpl<CouponMapper, Coupon> implements ICouponService {
 
     private final ICouponScopeService scopeService;
+
+    private final IExchangeCodeService exchangeCodeService;
     @Override
     @Transactional
     public void saveCoupon(CouponFormDTO dto) {
@@ -100,5 +104,10 @@ public class CouponServiceImpl extends ServiceImpl<CouponMapper, Coupon> impleme
             c.setStatus(CouponStatus.UN_ISSUE);
         }
         this.updateById(c);
+
+        if(coupon.getObtainWay().equals(ObtainType.ISSUE) && coupon.getStatus() == CouponStatus.DRAFT) {
+            coupon.setIssueEndTime(c.getIssueEndTime());
+            exchangeCodeService.asyncGenerateExchangeCode(coupon);
+        }
     }
 }

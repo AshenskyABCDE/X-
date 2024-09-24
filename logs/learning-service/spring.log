@@ -70,3 +70,113 @@
 	External: 	http://192.168.150.1:8090
 	Profile(s): 	[local]
 ---------------------------------------------------------------------------------------
+12:30:00.055-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [   scheduling-1] c.b.m.c.t.support.ReflectLambdaMeta      : Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @2b4bac49
+12:30:00.081-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [   scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+12:30:00.405-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [   scheduling-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+12:30:00.416-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+12:30:00.443-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+12:30:00.536-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+13:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+13:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+13:00:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+13:30:00.004-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+13:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+13:30:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+14:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+14:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+14:00:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+14:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+14:30:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+14:30:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+15:00:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+15:00:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+15:00:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+15:30:00.004-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+15:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+15:30:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+16:00:00.023-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+16:00:00.028-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+16:00:00.032-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+16:30:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+16:30:00.008-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+16:30:00.012-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+17:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+17:00:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+17:00:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+17:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+17:30:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+17:30:00.008-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+18:00:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+18:00:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+18:00:00.011-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+18:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+18:30:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+18:30:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+19:00:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+19:00:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+19:00:00.008-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+19:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+19:30:00.005-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+19:30:00.008-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+20:00:00.008-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+20:00:00.009-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+20:00:00.012-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+20:30:00.006-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==>  Preparing: SELECT id,user_id,course_id,status,week_freq,plan_status,learned_sections,latest_section_id,latest_learn_time,create_time,expire_time,update_time FROM learning_lesson WHERE (user_id = ?)
+20:30:00.007-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : ==> Parameters: null
+20:30:00.010-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [   scheduling-1] c.t.l.m.LearningLessonMapper.selectList  : <==      Total: 0
+20:41:11.793-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Start destroying common HttpClient
+20:41:11.793-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [      Thread-18] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Start destroying Publisher
+20:41:11.796-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [      Thread-18] c.a.nacos.common.notify.NotifyCenter     : [NotifyCenter] Destruction of the end
+20:41:11.835-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [       Thread-1] c.a.n.common.http.HttpClientBeanHolder   : [HttpClientBeanHolder] Destruction of the end
+20:41:12.202-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.204-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.208-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#2-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.210-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#3-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.212-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#4-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.217-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#5-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.219-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#6-2] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+20:41:12.834-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#1-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.834-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#2-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.834-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#5-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.838-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#0-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.841-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#4-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.855-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#6-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:12.955-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ntContainer#3-2] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+20:41:13.134-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [      Thread-11] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server stop.
+20:41:13.158-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job registry-remove success, registryParam:RegistryParam{registryGroup='EXECUTOR', registryKey='learning-service', registryValue='http://192.168.150.1:10001/'}, registryResult:ReturnT [code=200, msg=null, content=null]
+20:41:13.159-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [rRegistryThread] c.x.j.c.thread.ExecutorRegistryThread    : >>>>>>>>>>> xxl-job, executor registry thread destroy.
+20:41:13.159-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.xxl.job.core.server.EmbedServer      : >>>>>>>>>>> xxl-job remoting server destroy success.
+20:41:13.160-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [FileCleanThread] c.x.j.core.thread.JobLogFileCleanThread  : >>>>>>>>>>> xxl-job, executor JobLogFileCleanThread thread destroy.
+20:41:13.161-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [rCallbackThread] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor callback thread destroy.
+20:41:13.162-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [      Thread-10] c.x.j.core.thread.TriggerCallbackThread  : >>>>>>>>>>> xxl-job, executor retry callback thread destroy.
+20:41:13.284-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registering from Nacos Server now...
+20:41:13.285-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [BEAT] removing beat: DEFAULT_GROUP@@learning-service:192.168.150.1:8090 from beat map.
+20:41:13.287-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [DEREGISTER-SERVICE] f923fb34-cb0a-4c06-8fca-ad61ea61a3f0 deregistering service DEFAULT_GROUP@@learning-service with instance: Instance{instanceId='null', ip='192.168.150.1', port=8090, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+20:41:13.297-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] c.a.c.n.registry.NacosServiceRegistry    : De-registration finished.
+20:41:13.299-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+20:41:13.896-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [g.push.receiver] com.alibaba.nacos.client.naming          : received push data: {"type":"dom","data":"{\"name\":\"DEFAULT_GROUP@@learning-service\",\"clusters\":\"DEFAULT\",\"cacheMillis\":10000,\"hosts\":[{\"instanceId\":\"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service\",\"ip\":\"192.168.150.101\",\"port\":8090,\"weight\":1.0,\"healthy\":true,\"enabled\":true,\"ephemeral\":true,\"clusterName\":\"DEFAULT\",\"serviceName\":\"DEFAULT_GROUP@@learning-service\",\"metadata\":{\"preserved.register.source\":\"SPRING_CLOUD\"},\"instanceHeartBeatInterval\":5000,\"instanceHeartBeatTimeOut\":15000,\"ipDeleteTimeout\":30000}],\"lastRefTime\":1727181674551,\"checksum\":\"\",\"allIPs\":false,\"reachProtectionThreshold\":false,\"valid\":true}","lastRefTime":34800478321053} from /192.168.150.101
+20:41:13.908-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [g.push.receiver] com.alibaba.nacos.client.naming          : removed ips(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.1#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.1","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:41:13.914-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [g.push.receiver] com.alibaba.nacos.client.naming          : current ips:(1) service: DEFAULT_GROUP@@learning-service@@DEFAULT -> [{"instanceId":"192.168.150.101#8090#DEFAULT#DEFAULT_GROUP@@learning-service","ip":"192.168.150.101","port":8090,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@learning-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatTimeOut":15000,"instanceHeartBeatInterval":5000}]
+20:41:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+20:41:16.303-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+20:41:19.308-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+20:41:22.312-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+20:41:22.312-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+20:41:22.312-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+20:41:22.313-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+20:41:22.313-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+20:41:22.313-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Start destroying NacosRestTemplate
+20:41:22.313-[LAPTOP-L9SH1VHI][sys]-- WARN 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : [NamingHttpClientManager] Destruction of the end
+20:41:22.314-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] c.a.n.client.identify.CredentialWatcher  : [null] CredentialWatcher is stopped
+20:41:22.314-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] c.a.n.client.identify.CredentialService  : [null] CredentialService is freed
+20:41:22.314-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.alibaba.nacos.client.naming          : com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+20:41:22.324-[LAPTOP-L9SH1VHI][sys]--DEBUG 4952 --- [ionShutdownHook] c.t.l.u.LearningRecordDelayTaskHandler   : 延迟任务停止执行！
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.448-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] o.s.a.r.l.SimpleMessageListenerContainer : Shutdown ignored - container is already stopped
+20:41:22.471-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+20:41:22.507-[LAPTOP-L9SH1VHI][sys]-- INFO 4952 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -9,6 +9,7 @@ import java.io.Serializable;
 
 import com.tianji.tjpromotion.enums.CouponStatus;
 import com.tianji.tjpromotion.enums.DiscountType;
+import com.tianji.tjpromotion.enums.ObtainType;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -59,7 +60,7 @@ public class Coupon implements Serializable {
     private Integer maxDiscountAmount;
 
     @ApiModelProperty(value = "获取方式：1：手动领取，2：兑换码")
-    private Integer obtainWay;
+    private ObtainType obtainWay;
 
     @ApiModelProperty(value = "开始发放时间")
     private LocalDateTime issueBeginTime;
