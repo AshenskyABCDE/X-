@@ -30,7 +30,7 @@ public class ExchangeCodeServiceImpl extends ServiceImpl<ExchangeCodeMapper, Exc
     private final StringRedisTemplate redisTemplate;
     @Override
     @Async("generateExchangeCodeExecutor")
-    public void asyncGenerateCode(Coupon coupon) {
+    public void asyncGenerateExchangeCode(Coupon coupon) {
         // 发放数量
         Integer totalNum = coupon.getTotalNum();
         // 1.获取Redis自增序列号
@@ -56,4 +56,5 @@ public class ExchangeCodeServiceImpl extends ServiceImpl<ExchangeCodeMapper, Exc
         // 4.写入Redis缓存，member：couponId，score：兑换码的最大序列号
         redisTemplate.opsForZSet().add(PromotionConstants.COUPON_RANGE_KEY, coupon.getId().toString(), maxSerialNum);
     }
+
 }

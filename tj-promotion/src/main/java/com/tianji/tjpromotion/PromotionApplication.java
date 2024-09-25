@@ -15,7 +15,7 @@ import java.net.UnknownHostException;
 @EnableScheduling
 @MapperScan("com.tianji.tjpromotion.mapper")
 @Slf4j
-public class PromotionApplication {
+public class  PromotionApplication {
     public static void main(String[] args) throws UnknownHostException {
         SpringApplication app = new SpringApplicationBuilder(PromotionApplication.class).build(args);
         Environment env = app.run(args).getEnvironment();
