@@ -24,6 +24,9 @@ public interface MqConstants {
 
          /*点赞记录有关的交换机*/
         String LIKE_RECORD_EXCHANGE = "like.record.topic";
+
+        /* 促销服务有关的交换机 */
+        String PROMOTION_EXCHANGE = "promotion.topic";
     }
     interface Queue {
         String ERROR_QUEUE_TEMPLATE = "error.{}.queue";
@@ -71,5 +74,6 @@ public interface MqConstants {
         String REFUND_CHANGE = "refund.status.change";
 
         String ORDER_DELAY_KEY = "delay.order.query";
+        String COUPON_RECEIVE = "coupon.receive";
     }
 }

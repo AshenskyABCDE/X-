@@ -13,6 +13,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
@@ -30,6 +31,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/orders")
 @RequiredArgsConstructor
+@Slf4j
 public class OrderController {
 
     private final IOrderService orderService;
@@ -55,6 +57,7 @@ public class OrderController {
     @ApiOperation("预下单接口，生成订单id，确认订单可用优惠券信息")
     @GetMapping("prePlaceOrder")
     public OrderConfirmVO prePlaceOrder(@RequestParam("courseIds")List<Long> courseIds) {
+        log.info("--------");
         return orderService.prePlaceOrder(courseIds);
     }
 

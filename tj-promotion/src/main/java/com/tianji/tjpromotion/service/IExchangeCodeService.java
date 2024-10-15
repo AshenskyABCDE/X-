@@ -15,4 +15,6 @@ import com.baomidou.mybatisplus.extension.service.IService;
 public interface IExchangeCodeService extends IService<ExchangeCode> {
 
     void asyncGenerateExchangeCode(Coupon coupon);
+
+    boolean updateExchangeCodeMark(long serialNum, boolean b);
 }
